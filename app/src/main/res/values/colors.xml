@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+<!--PALETA DE COLORES-->
+    <color name= "greenery">#88B04B</color>
+    <color name= "viridianGreen">#009499</color>
+    <color name= "directoireBlue">#0061A3</color>
+    <color name= "trueBlue">#1E4477</color>
+<!--OTROS COLORES-->
+    <color name= "onlineLime">#548A4D</color>
+    <color name= "blueRadiance">#58C9D4</color>
+    <color name= "goblinBlue">#5F7278</color>
+    <color name= "silverBlue">#8A9A9A</color>
+
+</resources>
