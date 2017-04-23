@@ -85,7 +85,7 @@ public class AccessToNet {
         String title, date, urlFoto, p;
         news = new ArrayList<>();
         Document html = convertStringToDocument(doc);
-        //NodeList articule = html.getElementsByTagName("article");
+        NodeList articule = html.getElementsByTagName("article");
 
         /**
         * Example of a articule
@@ -199,8 +199,10 @@ public class AccessToNet {
     public  Document convertStringToDocument(String html){
         try {
             DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            //TODO: Fix unterminated enetity ref
             return db.parse(new InputSource(new StringReader(html)));
         }catch (Exception e){
+            Log.e("ERROR HTML",e.getMessage());
             return null;
         }
     }
