@@ -9,19 +9,32 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.util.ArrayList;
+
 /**
  * Created by Dani_2 on 23/04/2017.
  */
 
 public class AccessToNet {
 
+    ArrayList arrayList = null;
     String html = null;
-    static public Context mContext =null;
+    private static Context mContext =null;
+    private final static String URL_UEM_CIVIL_CULUB = "https://uemclubcivil.wordpress.com/2017/";
 
-    public AccessToNet(){
-
+    /**
+     * Constructor for get the web
+     * @param mContext
+     */
+    public AccessToNet(Context mContext){
+        this.mContext = mContext;
+        Volley(URL_UEM_CIVIL_CULUB);
     }
 
+    /**
+     * Get the Web
+     * @param Url
+     */
     public void Volley(String Url){
         RequestQueue rq = Volley.newRequestQueue(mContext);
         String url =Url;
@@ -31,7 +44,7 @@ public class AccessToNet {
             public void onResponse(Object o) {
                 String html_respuesta=(String)o;
                 Log.v("html",html_respuesta);
-                html = html_respuesta;
+                setHTML(html_respuesta);
             }
         };
 
@@ -45,7 +58,9 @@ public class AccessToNet {
         rq.add(respuesta);
     }
 
-    public static void setContext(){
 
+    public void setHTML(String html){
+        this.html = html;
     }
+
 }
