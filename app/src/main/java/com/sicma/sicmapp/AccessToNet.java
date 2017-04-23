@@ -85,7 +85,7 @@ public class AccessToNet {
         String title, date, urlFoto, p;
         news = new ArrayList<>();
         Document html = convertStringToDocument(doc);
-        NodeList articule = html.getElementsByTagName("article");
+        //NodeList articule = html.getElementsByTagName("article");
 
         /**
         * Example of a articule
@@ -199,11 +199,7 @@ public class AccessToNet {
     public  Document convertStringToDocument(String html){
         try {
             DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            InputSource is = new InputSource();
-            is.setCharacterStream(new StringReader(html));
-
-           //TODO:Solve the problem of suporting the next line
-            return db.parse(is);
+            return db.parse(new InputSource(new StringReader(html)));
 
         }catch (Exception e){
             return null;
