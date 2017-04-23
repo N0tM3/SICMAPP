@@ -200,7 +200,6 @@ public class AccessToNet {
         try {
             DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
             return db.parse(new InputSource(new StringReader(html)));
-
         }catch (Exception e){
             return null;
         }
