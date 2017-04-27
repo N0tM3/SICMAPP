@@ -54,7 +54,11 @@ public class AccessToNet {
                 String html_respuesta=(String)o;
                 Log.v("html",html_respuesta);
                 setHTML(html_respuesta);
-                parseDocument(html_respuesta);
+                //parseDocument(html_respuesta);
+               ArrayList<New> Anser = parseDocument1(html_respuesta);
+                for (New mNew:Anser) {
+                    printInLogs(mNew);
+                }
             }
         };
 
@@ -66,6 +70,16 @@ public class AccessToNet {
 
         StringRequest respuesta=new StringRequest(url, oyente, oyente_fallo);
         rq.add(respuesta);
+    }
+
+
+    public void printInLogs(New mNew){
+        Log.d("new_html","    ");
+        Log.d("new_html","----- Actual log----- ");
+        Log.d("new_html","title: "+mNew.getTitle());
+        Log.d("new_html","date: "+mNew.getDate());
+        Log.d("new_html","imagen: "+mNew.getUrlFoto());
+        Log.d("new_html","parragraph "+mNew.getParragraph());
     }
 
     /**
@@ -85,12 +99,12 @@ public class AccessToNet {
         String title, date, urlFoto, p;
         news = new ArrayList<>();
         Document html = convertStringToDocument(doc);
-        NodeList articule = html.getElementsByTagName("article");
+        //NodeList articule = html.getElementsByTagName("article");
 
         /**
         * Example of a articule
         *
-        * <artitucle id = "post-639"  class = "post-639 post type-post status-publish format-standard has-post-thunail hentry
+        * <article id = "post-639"  class = "post-639 post type-post status-publish format-standard has-post-thunail hentry
         * category hentry category-actividades-de-interes">
         *   <header class="entry-header">
         *         <h2 class="entry-title">
@@ -160,7 +174,7 @@ public class AccessToNet {
         *               </a>
         *       </span>
         *   </footer>
-        *</articule>
+        *</article>
         */
 
 /*
@@ -189,6 +203,36 @@ public class AccessToNet {
         }
 */
         return news;
+    }
+
+    /**
+     * Methos to get the ArrayListr of the articules
+     * @param doc
+     * @return
+     */
+    ArrayList<New> parseDocument1(String doc){
+        ArrayList<New> alArticules = new ArrayList();
+        String title, date, urlFoto, parragraph;
+        String[] articules = splitByTarGetLabel(doc, "article");
+          for(int i = 1; i < (articules.length-1);i+=2){
+              String articule = articules[i];
+            urlFoto = splitByTarGetLabel(articule,"src")[1];
+            parragraph = splitByTarGetLabel(articule,"p")[1];
+            date = splitByTarGetLabel(articule,"date")[1];
+            title = splitByTarGetLabel(articule,"h2")[1];
+            alArticules.add(new New(title, date, urlFoto, parragraph));
+        }
+        return alArticules;
+    }
+
+    /**
+     * Genera method to get something of an html
+     * @param stringDoc
+     * @param tag
+     * @return
+     */
+    String[] splitByTarGetLabel(String stringDoc,String tag){
+        return stringDoc.split(tag);
     }
 
     /**
