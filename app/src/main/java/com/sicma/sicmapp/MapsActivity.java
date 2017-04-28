@@ -1,12 +1,16 @@
 package com.sicma.sicmapp;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -37,10 +41,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        LatLng museoprado = new LatLng(40.4137818, -3.6921270999999933);
+        LatLng unicarlos=new LatLng(40.3317753,-3.766986299999985);
+        LatLng reinasofia=new LatLng(40.4079123,-3.6945568999999523);
+        LatLng bellasartes=new LatLng(40.4183042,-3.6965333000000555);
+        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.mipmap.marcador1);
+        BitmapDescriptor icon2 = BitmapDescriptorFactory.fromResource(R.mipmap.marcador2);
+        BitmapDescriptor icon3=BitmapDescriptorFactory.fromResource(R.mipmap.marcador3);
+        MarkerOptions markerPrado = new MarkerOptions().position(museoprado).title("Eventos en el museo del Prado").snippet("Aqui van los eventos");
+        markerPrado.icon(icon);
+        mMap.addMarker(markerPrado);
+        MarkerOptions markerUniCarlos = new MarkerOptions().position(unicarlos).title("Eventos en el salón Agustín Betancourt");
+        markerUniCarlos.icon(icon2);
+        mMap.addMarker(markerUniCarlos);
+        MarkerOptions markerreinasofia = new MarkerOptions().position(reinasofia).title("Eventos en la carpa reina sofia");
+        markerreinasofia.icon(icon3);
+        mMap.addMarker(markerreinasofia);
+        MarkerOptions markerbellasartes = new MarkerOptions().position(bellasartes).title("Eventos en la sala valle-inclán");
+        markerbellasartes.icon(icon2);
+        mMap.addMarker(markerbellasartes);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(museoprado));
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
     }
+
 }
