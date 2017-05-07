@@ -1,7 +1,10 @@
 package com.sicma.sicmapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -54,6 +57,7 @@ public class AccessToNet {
                 Log.v("html",html_respuesta);
 
                news = parseDocument(html_respuesta);
+                NewsCards.setIsInternetOnline(true);
                 for (New mNew:news) {
                     printInLogs(mNew);
                 }
@@ -63,6 +67,9 @@ public class AccessToNet {
         Response.ErrorListener oyente_fallo=new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
+                news = new ArrayList<>();
+                NewsCards.setIsInternetOnline(false);
+                news.add(new New("Internet Error","","","Please active internet an reloap the app"));
             }
         };
 
@@ -102,9 +109,9 @@ public class AccessToNet {
               title = getTitleOfThisURL(news);
               // date = getDateOfThisURL(news);
               urlFoto = getImagenUrlOfThisURL(news);
-              parragraph = getParragarphOfThisURL(news);
+             // parragraph = getParragarphOfThisURL(news);
             //alArticules.add(new New(title, date, urlFoto, parragraph));
-              alArticules.add(new New(title, "", urlFoto, parragraph));
+              alArticules.add(new New(title, "", urlFoto, ""));
         }
 
         return alArticules;
@@ -215,4 +222,5 @@ public class AccessToNet {
     ArrayList<New> getNews(){
         return news;
     }
+
 }

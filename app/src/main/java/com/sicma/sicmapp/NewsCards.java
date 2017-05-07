@@ -27,6 +27,7 @@ import static android.support.v4.content.ContextCompat.startActivity;
 public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
 
     static ArrayList<New> alNews;
+    static boolean isInternetOnline;
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView bmImage;
@@ -68,7 +69,6 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
             cv = (CardView) itemView.findViewById(R.id.mcard);
             title = (TextView) itemView.findViewById(R.id.txtTitle);
             text = (TextView) itemView.findViewById(R.id.txtText);
-            date = (TextView) itemView.findViewById(R.id.txtDate);
             imagen = (ImageView) itemView.findViewById(R.id.mImage);
         }
     }
@@ -92,22 +92,22 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
     @Override
     public void onBindViewHolder(NewsCards.MyViewHolder holder, int position) {
         holder.title.setText(alNews.get(position).getTitle());
-        holder.text.setText(null);
-        holder.date.setText(alNews.get(position).getDate());
-        holder.imagen.setScaleType(ImageView.ScaleType.CENTER);
-        new DownloadImageTask(holder.imagen).execute(alNews.get(position).getUrlFoto());
-        holder.cv.setVisibility(View.VISIBLE);
+        holder.text.setText(alNews.get(position).getParragraph());
+        if(isInternetOnline) {
+            holder.imagen.setScaleType(ImageView.ScaleType.CENTER);
+            new DownloadImageTask(holder.imagen).execute(alNews.get(position).getUrlFoto());
+            holder.cv.setVisibility(View.VISIBLE);
 
-        final NewsCards.MyViewHolder hold = holder;
-        final String url = alNews.get(position).getParragraph();
-
-        holder.cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                v.getContext().startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(url)));
-            }
-        });
-
+            final String url = alNews.get(position).getParragraph();
+            holder.cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    v.getContext().startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(url)));
+                }
+            });
+        }else{
+            holder.imagen.setImageResource(R.drawable.ic_signal_cellular_connected_no_internet_0_bar_black_24dp);
+        }
     }
 
     @Override
@@ -115,4 +115,8 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
         return alNews.size();
     }
 
+
+    public static void setIsInternetOnline(boolean is){
+        isInternetOnline= is;
+    }
 }
