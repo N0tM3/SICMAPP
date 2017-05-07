@@ -83,6 +83,7 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
         alNews = alNew;
     }
 
+
     @Override
     public NewsCards.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_news_cards, parent, false);
