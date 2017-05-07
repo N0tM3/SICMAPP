@@ -8,6 +8,81 @@
     <string name="title_activity_recycler_view_news">RecyclerViewNewsActivity</string>
     <string name="title_activity_recycler_news">RecyclerNewsActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="museoprado">Viernes 19 de mayo"\n"
+09.00 Inauguración de la IV edición de la Semana de la
+Ingeniería de Caminos en Madrid
+Mesa redonda presidentes de empresas que han presentado
+iconos en la muestra
+</string>
+    <string name="plazacallao">Lunes 22 de mayo"\n"
+11.00 Inauguración muestra de iconos
+</string>
+    <string name="agustin">Lunes 22 de mayo"\n"
+12.30 Federico Cantero Villamil. Inauguración exposición y
+conferencia sobre su obra."\n"
+        Viernes 26 de mayo"\n"
+11:30 Pintura del siglo XIX en el mundo occidental."\n"
+        18.00 Representación de una obra de teatro, por grupo teatro
+Caminosmadrid.
+
+</string>
+    <string name="realcasa">Lunes 22 de mayo"\n"
+18.00 La investigación, el desarrollo y la innovación en las
+empresas de Ingeniería</string>
+    <string name="bellasartes">Martes 23 de mayo"\n"
+19.00 La internacionalización de la ingeniería de caminos.
+</string>
+    <string name="residenciaestudiantes">Miércoles 24 de mayo"\n"
+9.00 Jornada sobre el cambio climático y la ingeniería de
+caminos"\n"
+14.00 Sesión sobre “La ingeniería y los Objetivos de
+Desarrollo Sostenible (ODS)”</string>
+    <string name="canalisabel">Jueves 25 de mayo"\n"
+18.30 El agua como bien escaso
+</string>
+    <string name="ucomplutense">Sábado 27 de mayo"\n"
+11:30 Contribución de la Ingeniería de Caminos al progreso.
+Canales de Navegación</string>
+<string name="upm">Sábado 20 de mayo"\n"
+11.00 - Torneo fútbol mixto"\n"
+    Domingo 21 de mayo"\n"
+    11.00 - Torneo fútbol mixto
+</string>
+    <string name="reinasofia">Lunes 22 de mayo"\n"
+16.00 - Cata de aguas diferentes (de manantial y potable de
+Madrid…)"\n"
+    Martes 23 de mayo"\n"
+11.00 Panel demostración nuevas tecnologías y aplicaciones:
+realidad aumentada, impresión 3D, 360º…"\n"
+        17.30 -Taller de montaje de elementos de ingeniería con
+piezas de Lego"\n"
+        Miércoles 24 de mayo"\n"
+11.00 Taller sobre la potabilización del agua"\n"
+        Jueves 25 de mayo"\n"
+11.30 Construcción de pasarela por alumnos de la UEM"\n"
+        Viernes 26 de mayo"\n"
+11.00 Montaje maqueta del Depósito elevado de Chamberí"\n"
+        Sábado 27 de mayo"\n"
+11.00 Realidad aumentada en la ingeniería de Caminos"\n"
+        11.00 Gran Gymkana por la muestra de “Iconos de la
+Ingeniería” de la ciudad con entrega final de galardones"\n"
+Domingo 28 de mayo"\n"
+10.00 Taller de montaje de elementos de ingeniería con
+piezas de Lego
+
+</string>
+    <string name="cinedore">Lunes 22 de mayo
+        19.00 Visionado de fotografías y cortos finalista. Entrega de
+premios de los concurso de cortometrajes y concurso de
+fotografías
+</string>
+    <string name="albeniz">Miércoles 24 de mayo
+        19.00 Concierto
+
+</string>
+    <string name="plazacastilla">Sábado 27 de mayo
+10.00 Itinerario con “Andariegos Madrid” por la muestra de
+iconos</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
