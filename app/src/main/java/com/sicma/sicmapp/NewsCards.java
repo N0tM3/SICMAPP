@@ -93,12 +93,11 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
     @Override
     public void onBindViewHolder(NewsCards.MyViewHolder holder, int position) {
         holder.title.setText(alNews.get(position).getTitle());
-        holder.text.setText(alNews.get(position).getParragraph());
         if(isInternetOnline) {
             holder.imagen.setScaleType(ImageView.ScaleType.CENTER);
             new DownloadImageTask(holder.imagen).execute(alNews.get(position).getUrlFoto());
             holder.cv.setVisibility(View.VISIBLE);
-
+            holder.text.setText("");
             final String url = alNews.get(position).getParragraph();
             holder.cv.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -107,6 +106,7 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
                 }
             });
         }else{
+            holder.text.setText(alNews.get(position).getParragraph());
             holder.imagen.setImageResource(R.drawable.ic_signal_cellular_connected_no_internet_0_bar_black_24dp);
         }
     }

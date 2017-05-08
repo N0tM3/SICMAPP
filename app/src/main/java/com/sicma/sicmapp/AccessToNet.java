@@ -109,9 +109,9 @@ public class AccessToNet {
               title = getTitleOfThisURL(news);
               // date = getDateOfThisURL(news);
               urlFoto = getImagenUrlOfThisURL(news);
-             // parragraph = getParragarphOfThisURL(news);
+              parragraph = getParragarphOfThisURL(news);
             //alArticules.add(new New(title, date, urlFoto, parragraph));
-              alArticules.add(new New(title, "", urlFoto, ""));
+              alArticules.add(new New(title, "", urlFoto, parragraph));
         }
 
         return alArticules;
