@@ -8,82 +8,145 @@
     <string name="title_activity_recycler_view_news">RecyclerViewNewsActivity</string>
     <string name="title_activity_recycler_news">RecyclerNewsActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="museoprado">Viernes 19 de mayo"\n"
-09.00 Inauguración de la IV edición de la Semana de la
-Ingeniería de Caminos en Madrid
+    <string name="museoprado"><b>Viernes 19 de mayo</b>"\n"
+ 09.00 Inauguración de la IV edición de la Semana de la
+Ingeniería de Caminos en Madrid"\n"
 Mesa redonda presidentes de empresas que han presentado
-iconos en la muestra
+iconos en la muestra"\n"
 </string>
-    <string name="plazacallao">Lunes 22 de mayo"\n"
-11.00 Inauguración muestra de iconos
+    <string name="plazacallao"><b>Lunes 22 de mayo</b>"\n"
+ 11.00 Inauguración muestra de iconos"\n"
 </string>
-    <string name="agustin">Lunes 22 de mayo"\n"
-12.30 Federico Cantero Villamil. Inauguración exposición y
+    <string name="agustin"><b>Lunes 22 de mayo</b>"\n"
+ 12.30 Federico Cantero Villamil. Inauguración exposición y
 conferencia sobre su obra."\n"
-        Viernes 26 de mayo"\n"
-11:30 Pintura del siglo XIX en el mundo occidental."\n"
+        <b>Viernes 26 de mayo</b>"\n"
+ 11:30 Pintura del siglo XIX en el mundo occidental."\n"
         18.00 Representación de una obra de teatro, por grupo teatro
-Caminosmadrid.
+Caminosmadrid."\n"
 
 </string>
-    <string name="realcasa">Lunes 22 de mayo"\n"
-18.00 La investigación, el desarrollo y la innovación en las
+    <string name="realcasa"><b>Lunes 22 de mayo</b>"\n"
+ 18.00 La investigación, el desarrollo y la innovación en las
 empresas de Ingeniería</string>
-    <string name="bellasartes">Martes 23 de mayo"\n"
-19.00 La internacionalización de la ingeniería de caminos.
+    <string name="bellasartes"><b>Martes 23 de mayo</b>"\n"
+ 19.00 La internacionalización de la ingeniería de caminos.
 </string>
-    <string name="residenciaestudiantes">Miércoles 24 de mayo"\n"
-9.00 Jornada sobre el cambio climático y la ingeniería de
+    <string name="residenciaestudiantes"><b>Miércoles 24 de mayo</b>"\n"
+ 9.00 Jornada sobre el cambio climático y la ingeniería de
 caminos"\n"
-14.00 Sesión sobre “La ingeniería y los Objetivos de
+ 14.00 Sesión sobre “La ingeniería y los Objetivos de
 Desarrollo Sostenible (ODS)”</string>
-    <string name="canalisabel">Jueves 25 de mayo"\n"
-18.30 El agua como bien escaso
+    <string name="canalisabel"><b>Jueves 25 de mayo</b>"\n"
+ 18.30 El agua como bien escaso
 </string>
-    <string name="ucomplutense">Sábado 27 de mayo"\n"
-11:30 Contribución de la Ingeniería de Caminos al progreso.
+    <string name="ucomplutense"><b>Sábado 27 de mayo</b>"\n"
+ 11:30 Contribución de la Ingeniería de Caminos al progreso.
 Canales de Navegación</string>
-<string name="upm">Sábado 20 de mayo"\n"
-11.00 - Torneo fútbol mixto"\n"
-    Domingo 21 de mayo"\n"
-    11.00 - Torneo fútbol mixto
+<string name="upm"><b>Sábado 20 de mayo</b>"\n"
+ 11.00 - Torneo fútbol mixto"\n"
+    <b>Domingo 21 de mayo</b>"\n"
+    11.00 - Torneo fútbol mixto
 </string>
-    <string name="reinasofia">Lunes 22 de mayo"\n"
-16.00 - Cata de aguas diferentes (de manantial y potable de
-Madrid…)"\n"
-    Martes 23 de mayo"\n"
-11.00 Panel demostración nuevas tecnologías y aplicaciones:
+    <string name="reinasofia"><b>Lunes 22 de mayo</b>"\n"
+ 16.00 - Cata de aguas diferentes (de manantial y potable de
+Madrid…)"\n""\n"
+    <b>Martes 23 de mayo</b>"\n"
+ 11.00 Panel demostración nuevas tecnologías y aplicaciones:
 realidad aumentada, impresión 3D, 360º…"\n"
-        17.30 -Taller de montaje de elementos de ingeniería con
-piezas de Lego"\n"
-        Miércoles 24 de mayo"\n"
-11.00 Taller sobre la potabilización del agua"\n"
-        Jueves 25 de mayo"\n"
-11.30 Construcción de pasarela por alumnos de la UEM"\n"
-        Viernes 26 de mayo"\n"
-11.00 Montaje maqueta del Depósito elevado de Chamberí"\n"
-        Sábado 27 de mayo"\n"
-11.00 Realidad aumentada en la ingeniería de Caminos"\n"
-        11.00 Gran Gymkana por la muestra de “Iconos de la
-Ingeniería” de la ciudad con entrega final de galardones"\n"
-Domingo 28 de mayo"\n"
-10.00 Taller de montaje de elementos de ingeniería con
+         17.30 -Taller de montaje de elementos de ingeniería con
+piezas de Lego"\n""\n"
+        <b>Miércoles 24 de mayo</b>"\n"
+ 11.00 Taller sobre la potabilización del agua"\n""\n"
+        <b>Jueves 25 de mayo</b>"\n"
+ 11.30 Construcción de pasarela por alumnos de la UEM"\n""\n"
+        <b>Viernes 26 de mayo</b>"\n"
+ 11.00 Montaje maqueta del Depósito elevado de Chamberí"\n""\n"
+        <b>Sábado 27 de mayo</b>"\n"
+ 11.00 Realidad aumentada en la ingeniería de Caminos"\n"
+        11.00 Gran Gymkana por la muestra de “Iconos de la
+Ingeniería” de la ciudad con entrega final de galardones"\n""\n"
+<b>Domingo 28 de mayo</b>"\n"
+ 10.00 Taller de montaje de elementos de ingeniería con
 piezas de Lego
 
 </string>
-    <string name="cinedore">Lunes 22 de mayo
-        19.00 Visionado de fotografías y cortos finalista. Entrega de
+    <string name="cinedore">Lunes 22 de mayo"\n"
+        19.00 Visionado de fotografías y cortos finalista. Entrega de
 premios de los concurso de cortometrajes y concurso de
 fotografías
 </string>
-    <string name="albeniz">Miércoles 24 de mayo
-        19.00 Concierto
+    <string name="albeniz">Miércoles 24 de mayo"\n"
+        19.00 Concierto"\n"
 
 </string>
-    <string name="plazacastilla">Sábado 27 de mayo
-10.00 Itinerario con “Andariegos Madrid” por la muestra de
+    <string name="plazacastilla">Sábado 27 de mayo"\n"
+ 10.00 Itinerario con “Andariegos Madrid” por la muestra de
 iconos</string>
+    <string name="cedex">VISITAS (*)"\n"
+Lunes 22 de mayo"\n"
+ 10.00 Centro de Estudios de Puertos y Costas
+</string>
+    <string name="puestodecontrol">VISITAS (*)"\n"
+Lunes 22 de mayo"\n"
+ 11.00 Metro de Madrid- Puesto de Control CentralEstación
+de Alto del Arenal (L1)
+</string>
+    <string name="teleferico">VISITAS (*)"\n"
+Lunes 22 de mayo"\n"
+     12.30 Teleférico de Madrid
+</string>
+    <string name="eduardo">VISITAS (*)"\n"
+        Martes 23 de mayo"\n"
+         11.00 Instituto de Ciencias de la Construcción Eduardo
+Torroja
+</string>
+    <string name="faromoncloa">VISITAS (*)"\n"
+        Martes 23 de mayo"\n"
+     12.00 Faro de Moncloa</string>
+    <string name="estanquedetormentas">VISITAS (*)"\n"
+Miércoles 24 de mayo"\n"
+         10.00 Estación Depuradora de Aguas Residuales de la
+Gavia y Estanque de Tormentas de Abroñigales
 
+</string>
+    <string name="torrespacio">VISITAS (*)"\n"
+Miércoles 24 de mayo"\n"
+     11.00 Torrespacio
+</string>
+    <string name="aranjuez">VISITAS (*)"\n"
+Jueves 25 de mayo"\n"
+         9.00 Aranjuez, Embocador, Azuda, Canales, Huertas y
+Jardines
+</string>
+<string name="atocha">VISITAS (*)"\n"
+Jueves 25 de mayo"\n"
+     10.00 Nuevo Túnel de Alta Velocidad y Centro de
+Regulación y Control Atocha
+</string>
+    <string name="estadiowanda">VISITAS (*)"\n"
+Viernes 26 de mayo"\n"
+         9.00 Construcción Estadio Wanda Metropolitano
+    </string>
+    <string name="galeriashistoricas">
+        VISITAS (*)"\n"
+Viernes 26 de mayo"\n"
+         10.30 Depósitos y Galerías Históricas del Canal
+    </string>
+    <string name="zarzuela">VISITAS (*)"\n"
+Sábado 27 de mayo"\n"
+         10.00 Hipódromo de la Zarzuela, Edificios de Tribunas
+y Museo Eduardo Torroja
+</string>
+    <string name="madridrio">
+        VISITAS (*)"\n"
+Domingo 28 de mayo"\n"
+         10.00 Madrid Rio
+    </string>
+    <string name="emt">  VISITAS (*)"\n"
+Domingo 28 de mayo"\n"
+         11.00 Museo de autobuses históricos EMT
+    </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
