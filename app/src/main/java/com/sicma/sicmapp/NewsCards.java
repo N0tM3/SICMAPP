@@ -60,7 +60,6 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
         public CardView cv;
         public TextView title;
         public TextView text;
-        public TextView date;
         public ImageView imagen;
 
 
@@ -68,7 +67,6 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.mcard);
             title = (TextView) itemView.findViewById(R.id.txtTitle);
-            text = (TextView) itemView.findViewById(R.id.txtText);
             imagen = (ImageView) itemView.findViewById(R.id.mImage);
         }
     }
@@ -97,7 +95,6 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
             holder.imagen.setScaleType(ImageView.ScaleType.CENTER);
             new DownloadImageTask(holder.imagen).execute(alNews.get(position).getUrlFoto());
             holder.cv.setVisibility(View.VISIBLE);
-            holder.text.setText("");
             final String url = alNews.get(position).getParragraph();
             holder.cv.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -106,7 +103,6 @@ public class NewsCards  extends RecyclerView.Adapter<NewsCards.MyViewHolder> {
                 }
             });
         }else{
-            holder.text.setText(alNews.get(position).getParragraph());
             holder.imagen.setImageResource(R.drawable.ic_signal_cellular_connected_no_internet_0_bar_black_24dp);
         }
     }
