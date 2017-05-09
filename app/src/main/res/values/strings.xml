@@ -28,9 +28,9 @@ iconos en la muestra
     <string name="imgCallao">http://www.madrid.es/UnidadesDescentralizadas/UDCMedios/noticias/2009/11Noviembre/30Lunes/NotasPrensa/Callao/ficheros/PlazadeCallao001.jpg</string>
 
     <string name="titAgustin">Colegio Ingenieros de Caminos</string>
-    <string name="desAgustin">Salón Agustín Betancourt"\n"Lunes 22 de mayo"\n"
-12.30 Federico Cantero Villamil. Inauguración exposición y
-conferencia sobre su obra."\n""\n"
+    <string name="desAgustin">Salón Agustín Betancourt"\n"
+        Lunes 22 de mayo"\n"
+12.30 Federico Cantero Villamil. Inauguración exposición y conferencia sobre su obra."\n""\n"
         Viernes 26 de mayo"\n"
 11:30 Pintura del siglo XIX en el mundo occidental."\n"
         18.00 Representación de una obra de teatro, por grupo teatro
@@ -131,7 +131,7 @@ iconos</string>
     <string name="desCompuertaCanalPan"></string>
     <string name="imgCompuertaCanalPan">http://www.yometiroalmonte.es/wp-content/uploads/fotos/fp_251.JPG</string>
 
-    <string name="titBoyaOleaje"><b>Boya oleaje(Cedex)</b></string>
+    <string name="titBoyaOleaje">Boya oleaje(Cedex)</string>
     <string name="desBoyaOleaje"></string>
     <string name="imgBoyaOleaje">http://cazatormentas.com/wp-content/uploads/2010/11/boya.jpg</string>
 
