@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         rlEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openWebPage("http://www.google.com");
+                openWebPage("http://semanaingenieriacaminosmadrid.com/programa/actividades/");
             }
         });
         RelativeLayout rlNew = (RelativeLayout) findViewById(R.id.rl_noticias);
