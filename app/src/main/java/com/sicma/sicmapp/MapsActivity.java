@@ -103,7 +103,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return mplaces;
     }
 
-
     public void ponerMarcadores(GoogleMap googleMap){
         mMap = googleMap;
             mplaces = getPlaces();
