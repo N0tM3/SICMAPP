@@ -1,19 +1,12 @@
-package com.sicma.sicmapp;
+package com.sicma.sicmapp.Activitys;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.MarginLayoutParamsCompat;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,17 +18,15 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.sicma.sicmapp.*;
+import com.sicma.sicmapp.Objetos.Place;
 
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -44,6 +35,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private LatLngBounds MADRID = new LatLngBounds(new LatLng(40.434814, -3.683919400000036), new LatLng(40.434814, -3.683919400000036));
     ArrayList<Place> mplaces;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,7 +113,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return mplaces;
     }
 
-
     public void ponerMarcadores(GoogleMap googleMap){
         mMap = googleMap;
         mplaces = getPlaces();
@@ -160,23 +153,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     return v;
                 }
             });
-
             mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                 @Override
                 public void onInfoWindowClick(Marker marker) {
-                    for(int i =0;i<mplaces.size();i++){
+                    /*
+                    for(int i =0;i>mplaces.size();i++){
                         if(marker.getTitle().equals(mplaces.get(i).getTitle())){
                             DetallesEvento.setInfo(marker.getTitle(),mplaces.get(i).getDescripcion(),marker.getSnippet());
                             startActivity(new Intent(MapsActivity.this, DetallesEvento.class));
                         }
                     }
+                    */
+
                 }
             });
             mMap.addMarker(marker);
         }
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 12));
     }
-
     /**
     public void ponerMarcadores(GoogleMap googleMap) {
         mMap = googleMap;

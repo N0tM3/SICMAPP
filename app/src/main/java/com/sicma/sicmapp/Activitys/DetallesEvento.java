@@ -1,12 +1,12 @@
-package com.sicma.sicmapp;
+package com.sicma.sicmapp.Activitys;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.sicma.sicmapp.R;
 
 public class DetallesEvento extends AppCompatActivity {
     static String nombre,descripcion,imgUrl;
