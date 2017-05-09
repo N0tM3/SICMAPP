@@ -142,14 +142,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return mplaces;
     }
 
+
     public void ponerMarcadores(GoogleMap googleMap){
         mMap = googleMap;
         ArrayList<Place> mplaces = getPlaces();
         for (int i = 0;i < mplaces.size();i++){
             MarkerOptions marker = new MarkerOptions().position(mplaces.get(i).getLatPlace())
                     .title(mplaces.get(i).getTitle());
-            // markerPrado.snippet(getResources().getString(R.string.museoprado));
-            marker.snippet("http://imagenpng.com/wp-content/uploads/2015/08/google-homero.jpg");
+            marker.snippet(mplaces.get(i).getDescripcion());
             marker.icon(mplaces.get(i).getIcon());
             mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
                 @Override
@@ -164,7 +164,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     ImageView ivImage = (ImageView) v.findViewById(R.id.tv_lng);
                     txtTitle.setText(marker.getTitle());
                     ivImage.setScaleType(ImageView.ScaleType.CENTER);
-                    ivImage.setImageResource(R.drawable.common_google_signin_btn_icon_dark);
+                    //ivImage.setImageResource(R.drawable.common_google_signin_btn_icon_dark);
+                    new DownloadImageTask(ivImage).execute("https://lh3.googleusercontent.com/V4jrj3IynH3YA6P_KylSUo_TO3QJ1okLi0gGp_mt8gN7SLipO7YqmsfNo6TvTV0rLT0=w300");
                     return v;
                 }
             });
@@ -180,7 +181,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 12));
     }
 
-    /*
+    /**
     public void ponerMarcadores(GoogleMap googleMap) {
         mMap = googleMap;
         LatLng museoprado = new LatLng(40.4137818, -3.6921270999999933);
