@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_cv_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/callao_madrid">
+
+        <ImageView
+            android:id="@+id/img_card_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.50"
+            card_view:srcCompat="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/txt_card_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="FECHA 00 MES"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_card_lugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_card_fecha"
+            android:layout_centerHorizontal="true"
+            android:text="LUGAR"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

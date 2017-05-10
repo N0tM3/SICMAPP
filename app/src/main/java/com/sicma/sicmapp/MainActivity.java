@@ -1,61 +1,89 @@
 package com.sicma.sicmapp;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+import com.sicma.sicmapp.Activitys.ActivityEvents;
+import com.sicma.sicmapp.Activitys.MapsActivity;
+import com.sicma.sicmapp.Activitys.RecyclerViewNewsActivity;
+import com.sicma.sicmapp.Transfroms_Adapters.AccessToNet;
+
 
 public class MainActivity extends AppCompatActivity {
-    AccessToNet atn;
+
+    private RelativeLayout rl_noticias, rl_eventos, rl_mapa;
+    private ImageView img_info, img_twitter, img_web;
+    private AccessToNet atn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         atn = new AccessToNet(MainActivity.this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        chargeView();
-    }
+        rl_eventos = (RelativeLayout) findViewById(R.id.rl_eventos);
+        rl_mapa = (RelativeLayout) findViewById(R.id.rl_mapa);
+        rl_noticias = (RelativeLayout) findViewById(R.id.rl_noticias);
 
-    public void chargeView(){
-        RelativeLayout rlEvents = (RelativeLayout) findViewById(R.id.rl_eventos);
-        rlEvents.setOnClickListener(new View.OnClickListener() {
+        img_web = (ImageView) findViewById(R.id.img_web);
+        img_twitter= (ImageView) findViewById(R.id.img_twitter);
+        img_info = (ImageView) findViewById(R.id.img_info);
+
+        //EVENTOS ONCLICK
+        rl_eventos.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                openWebPage("http://semanaingenieriacaminosmadrid.com/programa/actividades/");
+            public void onClick(View view) {
+                Intent i  = new Intent(MainActivity.this, ActivityEvents.class);
+                startActivity(i);
+
             }
         });
-        RelativeLayout rlNew = (RelativeLayout) findViewById(R.id.rl_noticias);
-        rlNew.setOnClickListener(new View.OnClickListener() {
+        rl_noticias.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 RecyclerViewNewsActivity.setAtn(atn);
-                Intent chageToRecyclerViewNews = new Intent(MainActivity.this,RecyclerViewNewsActivity.class);
-                startActivity(chageToRecyclerViewNews);
+                Intent i= new Intent(MainActivity.this, RecyclerViewNewsActivity.class);
+                startActivity(i);
             }
         });
-        RelativeLayout rlMap = (RelativeLayout) findViewById(R.id.rl_mapa);
-        rlMap.setOnClickListener(new View.OnClickListener() {
+        rl_mapa.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent chageToMapEvente = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(chageToMapEvente);
             }
         });
-    }
 
-    /**
-     * Open a web page of a specified URL
-     *
-     * @param url URL to open
-     */
-    public void openWebPage(String url) {
-        Uri webpage = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-        startActivity(intent);
-    }
 
+        //BUTTONS GREEN
+        img_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Toast.makeText(MainActivity.this, "PRÓXIMAMENTE", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        img_twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Toast.makeText(MainActivity.this, "PRÓXIMAMENTE", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        img_web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri webpage = Uri.parse("http://semanaingenieriacaminosmadrid.com");
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
+            }
+        });
+
+
+
+    }
 }

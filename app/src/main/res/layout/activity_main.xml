@@ -13,13 +13,15 @@
         android:orientation="vertical">
 
         <RelativeLayout
+            android:clickable="true"
             android:id="@+id/rl_eventos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/trueBlue"
-            android:elevation="20dp">
+            android:background="@drawable/press_eventos"
+            android:elevation="30dp">
 
+<!--
             <View
                 android:id="@+id/linea1"
                 android:layout_width="10dp"
@@ -29,12 +31,11 @@
                 android:backgroundTint="@color/directoireBlue">
 
             </View>
-
             <View
                 android:id="@+id/linea2"
                 android:layout_width="10dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="20dp"
                 android:background="@drawable/forma_view"
                 android:backgroundTint="@color/viridianGreen">
 
@@ -44,12 +45,12 @@
                 android:id="@+id/linea3"
                 android:layout_width="10dp"
                 android:layout_height="70dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="30dp"
                 android:background="@drawable/forma_view"
                 android:backgroundTint="@color/greenery">
 
             </View>
-
+-->
 
             <LinearLayout
                 android:id="@+id/ln_eventos"
@@ -58,214 +59,237 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/linea3"
-                android:layout_toEndOf="@+id/linea3">
+                android:layout_marginLeft="40dp">
+            <!-- android:layout_toRightOf="@+id/linea3"
+             android:layout_toEndOf="@+id/linea3"-->
 
 
-                <ImageView
-                    android:id="@+id/img_eventos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="5dp"
-                    android:tint="#fff"
-                    app:srcCompat="@drawable/eventos" />
+             <ImageView
+                 android:id="@+id/img_eventos"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginRight="5dp"
+                 android:tint="#fff"
+                 app:srcCompat="@drawable/eventos" />
 
-                <TextView
-                    android:id="@+id/txt_eventos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:text="EVENTOS"
-                    android:textColor="#fff"
-                    android:textSize="30sp" />
+             <TextView
+                 android:id="@+id/txt_eventos"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="5dp"
+                 android:text="EVENTOS"
+                 android:textColor="#fff"
+                 android:textSize="30sp" />
 
-            </LinearLayout>
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_mapa"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elevation="15dp"
-            android:background="@color/directoireBlue">
-
-            <View
-                android:id="@+id/linea1_map"
-                android:layout_width="10dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/forma_view"
-                android:backgroundTint="@color/viridianGreen">
-
-            </View>
-
-            <View
-                android:id="@+id/linea2_map"
-                android:layout_width="10dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
-                android:background="@drawable/forma_view"
-                android:backgroundTint="@color/greenery">
-
-            </View>
-
-            <View
-                android:id="@+id/linea3_map"
-                android:layout_width="10dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="40dp"
-                android:background="@drawable/forma_view"
-                android:backgroundTint="@color/trueBlue">
-
-            </View>
-
-            <LinearLayout
-                android:id="@+id/ln_mapa"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/linea3_map"
-                android:layout_toEndOf="@+id/linea3_map">
-
-
-                <ImageView
-                    android:id="@+id/img_mapa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="5dp"
-                    android:tint="#fff"
-                    app:srcCompat="@drawable/maplocation" />
-
-                <TextView
-                    android:id="@+id/txt_mapa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:text="MAPA"
-                    android:textColor="#fff"
-                    android:textSize="30sp" />
-
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_noticias"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:elevation="10dp"
-            android:background="@color/viridianGreen"
-            android:layout_weight="1">
+         </LinearLayout>
 
 
 
-            <View
-                android:id="@+id/linea1_event"
-                android:layout_width="10dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/forma_view"
-                android:backgroundTint="@color/greenery">
+     </RelativeLayout>
 
-            </View>
+     <RelativeLayout
+         android:id="@+id/rl_mapa"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@drawable/press_map"
+         android:clickable="true"
+         android:elevation="20dp">
+         <!--
+                  <View
+                      android:id="@+id/linea1_map"
+                      android:layout_width="10dp"
+                      android:layout_height="30dp"
+                      android:layout_marginLeft="10dp"
+                      android:background="@drawable/forma_view"
+                      android:backgroundTint="@color/viridianGreen">
 
-            <View
-                android:id="@+id/linea2_event"
-                android:layout_width="10dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
-                android:background="@drawable/forma_view"
-                android:backgroundTint="@color/trueBlue">
+                  </View>
 
-            </View>
+                  <View
+                      android:id="@+id/linea2_map"
+                      android:layout_width="10dp"
+                      android:layout_height="50dp"
+                      android:layout_marginLeft="20dp"
+                      android:background="@drawable/forma_view"
+                      android:backgroundTint="@color/greenery">
 
-            <View
-                android:id="@+id/linea3_event"
-                android:layout_width="10dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="40dp"
-                android:background="@drawable/forma_view"
-                android:backgroundTint="@color/directoireBlue">
+                  </View>
 
-            </View>
+                  <View
+                      android:id="@+id/linea3_map"
+                      android:layout_width="10dp"
+                      android:layout_height="70dp"
+                      android:layout_marginLeft="30dp"
+                      android:background="@drawable/forma_view"
+                      android:backgroundTint="@color/trueBlue">
+
+                  </View>
+         -->
+                  <LinearLayout
+                      android:id="@+id/ln_mapa"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentTop="true"
+
+                      android:layout_weight="1"
+                      android:orientation="horizontal"
+                      android:layout_marginLeft="40dp">
+<!--
+                      android:layout_toEndOf="@+id/linea3_map"
+                      android:layout_toRightOf="@+id/linea3_map" -->
 
 
-            <LinearLayout
-                android:id="@+id/ln_noticias"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/linea3_event"
-                android:layout_toEndOf="@+id/linea3_event">
+                      <ImageView
+                          android:id="@+id/img_mapa"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="5dp"
+                          android:tint="#fff"
+                          app:srcCompat="@drawable/maplocation" />
+
+                      <TextView
+                          android:id="@+id/txt_mapa"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="5dp"
+                          android:text="MAPA"
+                          android:textColor="#fff"
+                          android:textSize="30sp" />
+
+                  </LinearLayout>
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/rl_noticias"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:elevation="10dp"
+                  android:background="@drawable/press_noticias"
+                  android:layout_weight="1"
+                  android:clickable="true">
 
 
-                <ImageView
-                    android:id="@+id/img_noticias"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="5dp"
-                    android:tint="#fff"
-                    app:srcCompat="@drawable/foldednewspaper" />
+         <!--
+                  <View
+                      android:id="@+id/linea1_event"
+                      android:layout_width="10dp"
+                      android:layout_height="30dp"
+                      android:layout_marginLeft="10dp"
+                      android:background="@drawable/forma_view"
+                      android:backgroundTint="@color/greenery">
 
-                <TextView
-                    android:id="@+id/txt_noticias"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:text="NOTICIAS"
-                    android:textColor="#fff"
-                    android:textSize="30sp" />
-            </LinearLayout>
-        </RelativeLayout>
+                  </View>
 
-        <LinearLayout
-            android:id="@+id/ln_info"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:background="@color/greenery">
+                  <View
+                      android:id="@+id/linea2_event"
+                      android:layout_width="10dp"
+                      android:layout_height="50dp"
+                      android:layout_marginLeft="20dp"
+                      android:background="@drawable/forma_view"
+                      android:backgroundTint="@color/trueBlue">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_launcher_round" />
+                  </View>
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_launcher_round"
-                android:layout_gravity="center"/>
+                  <View
+                      android:id="@+id/linea3_event"
+                      android:layout_width="10dp"
+                      android:layout_height="70dp"
+                      android:layout_marginLeft="30dp"
+                      android:background="@drawable/forma_view"
+                      android:backgroundTint="@color/directoireBlue">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_launcher_round"
-                android:layout_gravity="center"/>
-        </LinearLayout>
-    </LinearLayout>
+                  </View>
+         -->
 
-</FrameLayout>
+                  <LinearLayout
+                      android:id="@+id/ln_noticias"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:orientation="horizontal"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="40dp">
+                      <!--
+                      android:layout_toRightOf="@+id/linea3_event"
+                      android:layout_toEndOf="@+id/linea3_event"-->
+
+
+                      <ImageView
+                          android:id="@+id/img_noticias"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="5dp"
+                          android:tint="#fff"
+                          app:srcCompat="@drawable/foldednewspaper" />
+
+                      <TextView
+                          android:id="@+id/txt_noticias"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="5dp"
+                          android:text="NOTICIAS"
+                          android:textColor="#fff"
+                          android:textSize="30sp" />
+                  </LinearLayout>
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/rl_media"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/greenery"
+                  android:layout_weight="1">
+
+                  <LinearLayout
+                      android:id="@+id/ln_media"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginLeft="30dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+                      <ImageView
+                          android:id="@+id/img_info"
+                          android:layout_width="100dp"
+                          android:layout_height="50dp"
+                          android:layout_gravity="center"
+                          android:tint="#fff"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/information" />
+
+                      <ImageView
+                          android:id="@+id/img_twitter"
+                          android:layout_width="108dp"
+                          android:layout_height="50dp"
+                          android:layout_gravity="center"
+                          android:tint="#fff"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/twitter" />
+
+                      <ImageView
+                          android:id="@+id/img_web"
+                          android:layout_width="100dp"
+                          android:layout_height="50dp"
+                          android:layout_gravity="center"
+                          android:tint="#fff"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/www" />
+
+                  </LinearLayout>
+              </RelativeLayout>
+
+          </LinearLayout>
+
+         </FrameLayout>
