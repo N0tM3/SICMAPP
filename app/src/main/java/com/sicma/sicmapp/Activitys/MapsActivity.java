@@ -230,6 +230,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
             mMap.addMarker(marker);
         }
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 12));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 9));
     }
 }
