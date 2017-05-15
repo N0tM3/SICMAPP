@@ -78,7 +78,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     public void moveCamarera(String title, ArrayList<Place> mPlaces){
         for(Place mPlace : mPlaces){
-            if(title == mPlace.getTitle()){
+            if(title.equals(mPlace.getTitle().toString())){
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mPlace.getLatPlace(), 20));
             }
         }
