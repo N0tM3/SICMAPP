@@ -13,5 +13,7 @@
     <color name= "blueRadiance">#58C9D4</color>
     <color name= "goblinBlue">#5F7278</color>
     <color name= "silverBlue">#8A9A9A</color>
-
+<!--COLORES BASICOS-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
 </resources>

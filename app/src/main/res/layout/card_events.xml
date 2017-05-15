@@ -27,7 +27,7 @@
             android:layout_centerInParent="true"
             android:layout_marginBottom="10dp"
             android:text="FECHA 00 MES"
-            android:textColor="#fff"
+            android:textColor="@color/colorWhite"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
             android:layout_below="@+id/txt_card_fecha"
             android:layout_centerHorizontal="true"
             android:text="LUGAR"
-            android:textColor="#fff"
+            android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="bold" />
     </RelativeLayout>

@@ -56,13 +56,11 @@ public class AccessToNet {
             @Override
             public void onResponse(Object o) {
                 String html_respuesta=(String)o;
-                Log.v("html",html_respuesta);
+                //Log.v("html",html_respuesta);
 
                 news = parseDocument(html_respuesta);
                 NewsCards.setIsInternetOnline(true);
-                for (New mNew:news) {
-                    printInLogs(mNew);
-                }
+                //for (New mNew:news) {printInLogs(mNew);}
             }
         };
 

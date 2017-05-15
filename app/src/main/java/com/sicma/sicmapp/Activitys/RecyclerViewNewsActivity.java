@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.sicma.sicmapp.R;
 import com.sicma.sicmapp.Transfroms_Adapters.AccessToNet;
 import com.sicma.sicmapp.Transfroms_Adapters.NewsCards;

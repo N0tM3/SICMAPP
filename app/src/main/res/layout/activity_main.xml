@@ -71,7 +71,7 @@
                  android:layout_gravity="center"
                  android:layout_marginLeft="30dp"
                  android:layout_marginRight="5dp"
-                 android:tint="#fff"
+                 android:tint="@color/colorWhite"
                  app:srcCompat="@drawable/eventos" />
 
              <TextView
@@ -81,7 +81,7 @@
                  android:layout_gravity="center"
                  android:layout_marginLeft="5dp"
                  android:text="EVENTOS"
-                 android:textColor="#fff"
+                 android:textColor="@color/colorWhite"
                  android:textSize="30sp" />
 
          </LinearLayout>
@@ -150,7 +150,7 @@
                           android:layout_gravity="center"
                           android:layout_marginLeft="30dp"
                           android:layout_marginRight="5dp"
-                          android:tint="#fff"
+                          android:tint="@color/colorWhite"
                           app:srcCompat="@drawable/maplocation" />
 
                       <TextView
@@ -160,7 +160,7 @@
                           android:layout_gravity="center"
                           android:layout_marginLeft="5dp"
                           android:text="MAPA"
-                          android:textColor="#fff"
+                          android:textColor="@color/colorWhite"
                           android:textSize="30sp" />
 
                   </LinearLayout>
@@ -229,7 +229,7 @@
                           android:layout_gravity="center"
                           android:layout_marginLeft="30dp"
                           android:layout_marginRight="5dp"
-                          android:tint="#fff"
+                          android:tint="@color/colorWhite"
                           app:srcCompat="@drawable/foldednewspaper" />
 
                       <TextView
@@ -265,7 +265,7 @@
                           android:layout_width="100dp"
                           android:layout_height="50dp"
                           android:layout_gravity="center"
-                          android:tint="#fff"
+                          android:tint="@color/colorWhite"
                           android:layout_weight="1"
                           app:srcCompat="@drawable/information" />
 
@@ -274,7 +274,7 @@
                           android:layout_width="108dp"
                           android:layout_height="50dp"
                           android:layout_gravity="center"
-                          android:tint="#fff"
+                          android:tint="@color/colorWhite"
                           android:layout_weight="1"
                           app:srcCompat="@drawable/twitter" />
 
@@ -283,7 +283,7 @@
                           android:layout_width="100dp"
                           android:layout_height="50dp"
                           android:layout_gravity="center"
-                          android:tint="#fff"
+                          android:tint="@color/colorWhite"
                           android:layout_weight="1"
                           app:srcCompat="@drawable/www" />
 

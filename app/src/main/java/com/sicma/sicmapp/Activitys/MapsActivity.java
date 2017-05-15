@@ -149,7 +149,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             if(!isFromMemoryCache) marker.showInfoWindow();
                             return false;
                         }
-                    }).centerCrop().override(300,200).into(ivImage);
+                    }).fitCenter().override(300,200).into(ivImage);
                     return v;
                 }
             });
@@ -159,8 +159,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     for(int i =0;i<mplaces.size();i++){
                         if(marker.getTitle().equals(mplaces.get(i).getTitle())){
-                            DetallesEvento.setInfo(marker.getTitle(),mplaces.get(i).getDescripcion(),marker.getSnippet());
-                            startActivity(new Intent(MapsActivity.this, DetallesEvento.class));
+                            PlaceDetails.setInfo(marker.getTitle(),mplaces.get(i).getDescripcion(),marker.getSnippet());
+                            startActivity(new Intent(MapsActivity.this, PlaceDetails.class));
                         }
                     }
 

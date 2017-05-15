@@ -15,7 +15,7 @@
         android:id="@+id/tv_lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
+        android:textColor="@color/colorWhite"
         android:background="@color/directoireBlue" />
 
 </LinearLayout>

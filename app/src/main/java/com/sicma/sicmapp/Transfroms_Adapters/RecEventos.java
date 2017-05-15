@@ -42,9 +42,6 @@ public class RecEventos extends RecyclerView.Adapter<RecEventos.EventosViewHolde
             date = (TextView) itemView.findViewById(R.id.txt_card_fecha);
             place = (TextView) itemView.findViewById(R.id.txt_card_lugar);
             background = (RelativeLayout) itemView.findViewById(R.id.rl_cv_events);
-
-
-
         }
     }
 
