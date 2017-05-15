@@ -299,6 +299,37 @@ y Museo Eduardo Torroja</string>
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="titpiezacicloagua">Pieza del ciclo del agua en Plaza de Castilla</string>
+    <string name="d1"></string>
+    <string name="d2"></string>
+    <string name="d3"></string>
+    <string name="d4"></string>
+    <string name="d5"></string>
+    <string name="d6"></string>
+    <string name="d7"></string>
+    <string name="d8"></string>
+    <string name="d9"></string>
+    <string name="d10"></string>
+
+    <string name="imgpieza">http://www.iagua.es/sites/default/files/styles/thumbnail-830x455/public/deposito_de_agua_del_canal_de_isabel_ii_en_la_plaza_de_castilla.jpg?itok=1YZRN-wY</string>
+    <string name="titcabezatuneladora">Cabeza de tuneladora en Estadio Santiago Bernabeu</string>
+    <string name="imgcabezatuneladora">http://i.imgur.com/1pWAKFF.png</string>
+    <string name="titcompactadora">Compactadora de gestión de residuos en Plaza de Chamberí</string>
+    <string name="imgcompactadora">http://i.imgur.com/QYQSSa6.png</string>
+    <string name="titcompuertacanal">Compuerta del Canal de Panamá en Plaza Colón</string>
+    <string name="imgcompuerta">http://img.informador.com.mx/biblioteca/imagen/370x277/1067/1066184.jpg</string>
+    <string name="titaerogenerador">Aerogenerador en Plaza Callao</string>
+    <string name="imgaerogenerador">http://i.imgur.com/a/RZaTv.png</string>
+    <string name="tittopopuertaalcala">Topo en Puerta de Alcalá</string>
+    <string name="imgtopo">http://i.imgur.com/zsDM5Xt.png</string>
+    <string name="titboya">Boya medidora de oleaje con acelerómetro en Pº Prado con Cuesta Moyano</string>
+    <string name="imgboya">http://i.imgur.com/6ceyAyT.png</string>
+    <string name="tittramovias">Tramo de vías con traviesas y ferrocamión en Museo Reina Sofia</string>
+    <string name="imgtramo">http://i.imgur.com/z5PSGt2.png</string>
+    <string name="titrozadora">Rozadora cargadora Atocha</string>
+    <string name="imgrozadora">http://i.imgur.com/hGht5WM.png</string>
+    <string name="titcubipodo">Cubípodo en Plaza de Legazpi</string>
+    <string name="imgcubipodo">http://i.imgur.com/D9NiDUv.png</string>
 
 </resources>
 

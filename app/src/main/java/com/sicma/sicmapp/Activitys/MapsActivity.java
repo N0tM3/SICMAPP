@@ -122,51 +122,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     public ArrayList<Place> getPlaces(){
         ArrayList<Place> mplaces = new ArrayList<>();
-        //--
-        //Jornadas y conferencias
-        //--
-        mplaces.add(new Place(new LatLng(40.4137818, -3.6921270999999933),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titMuseoprado),getResources().getString(R.string.desMuseoprado),getResources().getString(R.string.imgMuseoprado)));
-        mplaces.add(new Place(new LatLng(40.4201134, -3.705888800000025),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titCallao),getResources().getString(R.string.desCallao),getResources().getString(R.string.imgCallao)));
-        mplaces.add(new Place(new LatLng(40.4319696, -3.691550799999959),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titAgustin),getResources().getString(R.string.desAgustin),getResources().getString(R.string.imgAgustin)));
-        mplaces.add(new Place(new LatLng(40.416406, -3.7038),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titRealCasaCorreos),getResources().getString(R.string.desRealCasaCorreos),getResources().getString(R.string.imgRealCasaCorreos)));
-        mplaces.add(new Place(new LatLng(40.4183042, -3.6965333000000555),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titBellasArtes),getResources().getString(R.string.descBellasArtes),getResources().getString(R.string.imgBellasArtes)));
-        mplaces.add(new Place(new LatLng(40.440677, -3.687981),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titResidenciaEstudiantes),getResources().getString(R.string.desResidenciaEstudiantes),getResources().getString(R.string.imgResidenciaEstudiantes)));
-        mplaces.add(new Place(new LatLng(40.447825, -3.728587),BitmapDescriptorFactory.fromResource(R.mipmap.marcador3),getResources().getString(R.string.titCienciasExactasComplutense),getResources().getString(R.string.desCienciasExactasComplutense),getResources().getString(R.string.imgCienciasExtractasComplutense)));
 
-        //--
-        //Actividades
-        //--
-        mplaces.add(new Place(new LatLng(40.448637, -3.71928),BitmapDescriptorFactory.fromResource(R.mipmap.marcador2),getResources().getString(R.string.titUPM),getResources().getString(R.string.desUPM),getResources().getString(R.string.imgUPM)));
-        mplaces.add(new Place(new LatLng(40.4079123, -3.6945568999999523),BitmapDescriptorFactory.fromResource(R.mipmap.marcador2),getResources().getString(R.string.titCarpaReinaSofia),getResources().getString(R.string.desCarpaReinaSofia),getResources().getString(R.string.imgCarpaReinaSofia)));
-        mplaces.add(new Place(new LatLng(40.411676, -3.699073),BitmapDescriptorFactory.fromResource(R.mipmap.marcador2),getResources().getString(R.string.titCineDore),getResources().getString(R.string.desCineDore),getResources().getString(R.string.imgCineDore)));
-        mplaces.add(new Place(new LatLng(40.417066,-3.712296),BitmapDescriptorFactory.fromResource(R.mipmap.marcador2),getResources().getString(R.string.titFundacionAlbeniz),getResources().getString(R.string.descFundacionAlbeniz),getResources().getString(R.string.imgFundacionAlbeniz)));
-        mplaces.add(new Place(new LatLng(40.439124,-3.7008069999999407),BitmapDescriptorFactory.fromResource(R.mipmap.marcador2),getResources().getString(R.string.titCICCP),getResources().getString(R.string.titCICCP),getResources().getString(R.string.imgCICCP)));
-        mplaces.add(new Place(new LatLng(40.439124,-3.7008069999999407),BitmapDescriptorFactory.fromResource(R.mipmap.marcador2),getResources().getString(R.string.titDespositoCanalPCastilla),getResources().getString(R.string.desDespositoCanalPCastilla),getResources().getString(R.string.imgDespositoCanalPCastilla)));
-
-        //--
-        //MUESTRA “ICONOS POR MADRID DE LA INGENIERÍA DE CAMINOS”
-        //--
-        mplaces.add(new Place(new LatLng(40.4201134, -3.705888800000025),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titAereoPlazaCallao),getResources().getString(R.string.despAereoPlazaCallao),getResources().getString(R.string.imgAereoPlazaCallao)));
-        mplaces.add(new Place(new LatLng(40.42472046352701,-3.6892632999999933),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titCompuertaCanalPan),getResources().getString(R.string.desCompuertaCanalPan),getResources().getString(R.string.imgCompuertaCanalPan)));
-        mplaces.add(new Place(new LatLng(40.40969641351984,-3.6903641999999763),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titBoyaOleaje),getResources().getString(R.string.desBoyaOleaje),getResources().getString(R.string.imgBoyaOleaje)));
-        mplaces.add(new Place(new LatLng(40.4070519,-3.6913500000000568),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titRozadora),getResources().getString(R.string.desRozadora),getResources().getString(R.string.imgRozadora)));
 
         //--
         //VISITAS
         //--
-        mplaces.add(new Place(new LatLng(40.3929345,-3.7049173000000337),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titCEDEX),getResources().getString(R.string.desCEDEX),getResources().getString(R.string.imgCEDEX)));
-        mplaces.add(new Place(new LatLng(40.3897726,-3.6452193999999736),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titALtoReal),getResources().getString(R.string.desAltoReal),getResources().getString(R.string.imgAltoReal)));
-        mplaces.add(new Place(new LatLng(40.419765,-3.7487290000000257),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titTeleferico),getResources().getString(R.string.desTeleferico),getResources().getString(R.string.imgTeleferico)));
-        mplaces.add(new Place(new LatLng(40.4723136,-3.6717512999999826),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titEduardoTorroja),getResources().getString(R.string.desEduardoTorroja),getResources().getString(R.string.imgEduardoTorroja)));
-        mplaces.add(new Place(new LatLng(40.437304,-3.7216728999999305),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titFaroMoncloa),getResources().getString(R.string.desFaroMoncloa),getResources().getString(R.string.imgFaroMoncloa)));
-        mplaces.add(new Place(new LatLng(40.3559,-3.622690000000034),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titTormentas),getResources().getString(R.string.descTormentas),getResources().getString(R.string.imgTormentas)));
-        mplaces.add(new Place(new LatLng(40.4791118,-3.686590199999955),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titPaseoCastellas),getResources().getString(R.string.desPaseoCastellas),getResources().getString(R.string.imgPaseoCastellas)));
-        mplaces.add(new Place(new LatLng(40.0364203,-3.608865499999979),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titAranjuez),getResources().getString(R.string.desAranjuez),getResources().getString(R.string.imgAranjuez)));
-        mplaces.add(new Place(new LatLng(40.4070519,-3.6913500000000568),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titAtocha),getResources().getString(R.string.desAtocha),getResources().getString(R.string.imgAtocha)));
-        mplaces.add(new Place(new LatLng(40.4361737,-3.599310599999967),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titWada),getResources().getString(R.string.desWada),getResources().getString(R.string.imgWada)));
-        mplaces.add(new Place(new LatLng(40.4685005,-3.757951999999932),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titZarzuela),getResources().getString(R.string.desZarzuela),getResources().getString(R.string.imgZarzuela)));
-        mplaces.add(new Place(new LatLng(40.3980331,-3.710934599999973),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titMadridRio),getResources().getString(R.string.desMadridRio),getResources().getString(R.string.imgMadridRio)));
-        mplaces.add(new Place(new LatLng(40.4759299,-3.6836779000000206),BitmapDescriptorFactory.fromResource(R.mipmap.marcador1),getResources().getString(R.string.titEMT),getResources().getString(R.string.desEMT),getResources().getString(R.string.imgEMT)));
+        mplaces.add(new Place(new LatLng(40.4659672,-3.689901700000064),BitmapDescriptorFactory.fromResource(R.mipmap.uno),getResources().getString(R.string.titpiezacicloagua),getResources().getString(R.string.d1),getResources().getString(R.string.imgpieza)));
+        mplaces.add(new Place(new LatLng(40.4530541,-3.688344499999971),BitmapDescriptorFactory.fromResource(R.mipmap.dos),getResources().getString(R.string.titcabezatuneladora),getResources().getString(R.string.d2),getResources().getString(R.string.imgcabezatuneladora)));
+        mplaces.add(new Place(new LatLng(40.4324205,-3.6972862999999734),BitmapDescriptorFactory.fromResource(R.mipmap.tres),getResources().getString(R.string.titcompactadora),getResources().getString(R.string.d3),getResources().getString(R.string.imgcompactadora)));
+        mplaces.add(new Place(new LatLng(40.4248641,-3.6891348000000335),BitmapDescriptorFactory.fromResource(R.mipmap.cuatro),getResources().getString(R.string.titcompuertacanal),getResources().getString(R.string.desCompuertaCanalPan),getResources().getString(R.string.imgCompuertaCanalPan)));
+        mplaces.add(new Place(new LatLng(40.4201134,-3.705888800000025),BitmapDescriptorFactory.fromResource(R.mipmap.cinco),getResources().getString(R.string.titaerogenerador),getResources().getString(R.string.despAereoPlazaCallao),getResources().getString(R.string.imgAereoPlazaCallao)));
+        mplaces.add(new Place(new LatLng(40.419992,-3.6887369999999464),BitmapDescriptorFactory.fromResource(R.mipmap.seis),getResources().getString(R.string.tittopopuertaalcala),getResources().getString(R.string.d4),getResources().getString(R.string.imgtopo)));
+        mplaces.add(new Place(new LatLng(40.4096964,-3.6903641999999763),BitmapDescriptorFactory.fromResource(R.mipmap.siete),getResources().getString(R.string.titboya),getResources().getString(R.string.desBoyaOleaje),getResources().getString(R.string.imgBoyaOleaje)));
+        mplaces.add(new Place(new LatLng(40.4079123,-3.6945568999999523),BitmapDescriptorFactory.fromResource(R.mipmap.ocho),getResources().getString(R.string.tittramovias),getResources().getString(R.string.desEMT),getResources().getString(R.string.imgtramo)));
+        mplaces.add(new Place(new LatLng(40.4070519,-3.6913500000000568),BitmapDescriptorFactory.fromResource(R.mipmap.nueve),getResources().getString(R.string.titAtocha),getResources().getString(R.string.desAtocha),getResources().getString(R.string.imgAtocha)));
+        mplaces.add(new Place(new LatLng(40.3911506,-3.6951195000000325),BitmapDescriptorFactory.fromResource(R.mipmap.diez),getResources().getString(R.string.titcubipodo),getResources().getString(R.string.d6),getResources().getString(R.string.imgcubipodo)));
         return mplaces;
     }
 
