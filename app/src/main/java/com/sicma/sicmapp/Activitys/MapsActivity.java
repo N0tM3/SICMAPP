@@ -3,15 +3,20 @@ package com.sicma.sicmapp.Activitys;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.model.StringLoader;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -36,16 +41,64 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LatLngBounds MADRID = new LatLngBounds(new LatLng(40.434814, -3.683919400000036), new LatLng(40.434814, -3.683919400000036));
     ArrayList<Place> mplaces;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        chargeView();
+
+    }
+
+    /**
+     * Method for charging all the view componets
+     */
+    public void chargeView(){
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        //View Auto Complete EditText
+        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.searchPlaces);
+        autoCompleteTextView.setAdapter(makeArrayAdapterFromPlaces(getPlaces()));
+
+        //Button
+        ImageView mSearchButton = (ImageView) findViewById(R.id.mSearchButton);
+        mSearchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveCamarera(autoCompleteTextView.getText().toString(),getPlaces());
+            }
+        });
+    }
+
+    /**
+     * Method for get the move the camera to de place selected
+     * @param title
+     * @param mPlaces
+     */
+    public void moveCamarera(String title, ArrayList<Place> mPlaces){
+        for(Place mPlace : mPlaces){
+            if(title == mPlace.getTitle()){
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mPlace.getLatPlace(), 20));
+            }
+        }
+    }
+
+    /**
+     * method to create a list of places that are in the map
+     * @return ArrayList<Places> of the places in the map
+     * @return ArrayAdapter<String> of places in the map
+     */
+    public ArrayAdapter<String> makeArrayAdapterFromPlaces(ArrayList<Place> mPlaces){
+        ArrayList<String> mTitles = new ArrayList<>();
+        try{
+         for (Place mPlace :mPlaces){
+             mTitles.add(mPlace.getTitle());
+         }
+            return new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,mTitles);
+        }catch (Exception e) {
+            return null;
+        }
     }
 
     /**
@@ -63,6 +116,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         ponerMarcadores(googleMap);
     }
 
+    /**
+     * Get all the info that will be seen in the map
+     * @return ArrayList<Place> with all the maps positions
+     */
     public ArrayList<Place> getPlaces(){
         ArrayList<Place> mplaces = new ArrayList<>();
         //--
@@ -113,6 +170,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return mplaces;
     }
 
+    /**
+     * Puts all the marker sin the map that are needed
+     * @param googleMap
+     */
     public void ponerMarcadores(GoogleMap googleMap){
         mMap = googleMap;
         mplaces = getPlaces();
@@ -171,133 +232,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 12));
     }
-    /**
-    public void ponerMarcadores(GoogleMap googleMap) {
-        mMap = googleMap;
-        LatLng museoprado = new LatLng(40.4137818, -3.6921270999999933);
-        LatLng unicarlos = new LatLng(40.3317753, -3.766986299999985);
-        LatLng reinasofia = new LatLng(40.4079123, -3.6945568999999523);
-        LatLng bellasartes = new LatLng(40.4183042, -3.6965333000000555);
-        LatLng plazacallao = new LatLng(40.4201134, -3.705888800000025);
-        LatLng realcasacorreos = new LatLng(40.416406, -3.7038);
-        LatLng residenciaestudiantes = new LatLng(40.440677, -3.687981);
-        LatLng ucomplutense = new LatLng(40.447825, -3.728587);
-        LatLng upm = new LatLng(40.448637, -3.71928);
-        LatLng cinedore = new LatLng(40.411676, -3.699073);
-
-        LatLng albeniz=new LatLng(40.417066,-3.712296);
-        LatLng plazacastilla=new LatLng(40.465536,-3.688597);
-        LatLng canalisabel=new LatLng(40.439124,-3.7008069999999407);
-        LatLng cedex=new LatLng(40.3929345,-3.7049173000000337);
-
-
-        LatLng altoarenal=new LatLng(40.3897726,-3.6452193999999736);
-        LatLng telefe=new LatLng(40.419765,-3.7487290000000257);
-        LatLng eduardotorr=new LatLng(40.4723136,-3.6717512999999826);
-        LatLng faromoncloa=new LatLng(40.437304,-3.7216728999999305);
-
-        LatLng tormentas=new LatLng(40.3559,-3.622690000000034);
-        LatLng paseocastellana=new LatLng(40.4791118,-3.686590199999955);
-        LatLng aranjuez=new LatLng(40.0364203,-3.608865499999979);
-        LatLng atocha=new LatLng(40.4070519,-3.6913500000000568);
-        LatLng wanda=new LatLng(40.4361737,-3.599310599999967);
-
-        LatLng hipodromozarzuela=new LatLng(40.4685005,-3.757951999999932);
-        LatLng madridrio=new LatLng(40.3980331,-3.710934599999973);
-        LatLng emt=new LatLng(40.4759299,-3.6836779000000206);
-
-        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.mipmap.marcador1);
-        BitmapDescriptor icon2 = BitmapDescriptorFactory.fromResource(R.mipmap.marcador2);
-        BitmapDescriptor icon3 = BitmapDescriptorFactory.fromResource(R.mipmap.marcador3);
-
-
-        MarkerOptions markerPrado = new MarkerOptions().position(museoprado).title("Eventos en el museo del Prado");
-       // markerPrado.snippet(getResources().getString(R.string.museoprado));
-        markerPrado.snippet("http://imagenpng.com/wp-content/uploads/2015/08/google-homero.jpg");
-        markerPrado.icon(icon);
-        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-            @Override
-            public View getInfoWindow(Marker marker) {
-                return null;
-            }
-
-            @Override
-            public View getInfoContents(Marker marker) {
-                View v = getLayoutInflater().inflate(R.layout.info_window_layout, null);
-                TextView txtTitle = (TextView) v.findViewById(R.id.tv_lat);
-                ImageView ivImage = (ImageView) v.findViewById(R.id.tv_lng);
-                txtTitle.setText(marker.getTitle());
-                ivImage.setScaleType(ImageView.ScaleType.CENTER);
-                ivImage.setImageResource(R.drawable.common_google_signin_btn_icon_dark);
-                    return v;
-            }
-        });
-        mMap.addMarker(markerPrado);
-
-        MarkerOptions markerUniCarlos = new MarkerOptions().position(unicarlos).title("Eventos en el salón Agustín Betancourt");
-        markerUniCarlos.snippet(getResources().getString(R.string.agustin));
-        markerUniCarlos.icon(icon2);
-        mMap.addMarker(markerUniCarlos);
-
-        MarkerOptions markerreinasofia = new MarkerOptions().position(reinasofia).title("Eventos en la carpa reina sofia");
-        markerreinasofia.snippet(getResources().getString(R.string.reinasofia));
-        markerreinasofia.icon(icon3);
-        mMap.addMarker(markerreinasofia);
-
-        MarkerOptions markerbellasartes = new MarkerOptions().position(realcasacorreos).title("Eventos en la sala valle-inclán");
-        markerbellasartes.snippet(getResources().getString(R.string.bellasartes));
-        markerbellasartes.icon(icon2);
-        mMap.addMarker(markerbellasartes);
-
-        MarkerOptions markerplazacallao = new MarkerOptions().position(plazacallao).title("Eventos en la plaza callao");
-        markerplazacallao.snippet(getResources().getString(R.string.plazacallao));
-        markerplazacallao.icon(icon);
-        mMap.addMarker(markerplazacallao);
-
-        MarkerOptions markerrealcasa = new MarkerOptions().position(bellasartes).title("Eventos en la Real Casa de correos");
-        markerrealcasa.snippet(getResources().getString(R.string.realcasa));
-        markerrealcasa.icon(icon2);
-        mMap.addMarker(markerrealcasa);
-
-        MarkerOptions markerresestudiantes = new MarkerOptions().position(residenciaestudiantes).title("Eventos en la Residencia de estudiantes");
-        markerresestudiantes.snippet(getResources().getString(R.string.residenciaestudiantes));
-        markerresestudiantes.icon(icon3);
-        mMap.addMarker(markerresestudiantes);
-
-        MarkerOptions markerucomplutense = new MarkerOptions().position(ucomplutense).title("Eventos en la Universidad Complutense");
-        markerucomplutense.snippet(getResources().getString(R.string.ucomplutense));
-        markerucomplutense.icon(icon);
-        mMap.addMarker(markerucomplutense);
-
-        MarkerOptions markerupm = new MarkerOptions().position(upm).title("Eventos en la upm");
-        markerupm.snippet(getResources().getString(R.string.upm));
-        markerupm.icon(icon2);
-        mMap.addMarker(markerupm);
-
-        MarkerOptions markercinedore = new MarkerOptions().position(cinedore).title("Eventos en el cine dore");
-        markercinedore.snippet(getResources().getString(R.string.cinedore));
-        markercinedore.icon(icon3);
-        mMap.addMarker(markercinedore);
-
-        marcadores.add(markerPrado);
-        marcadores.add(markerUniCarlos);
-        marcadores.add(markerreinasofia);
-        marcadores.add(markerbellasartes);
-        marcadores.add(markercinedore);
-        marcadores.add(markerplazacallao);
-        marcadores.add(markerrealcasa);
-        marcadores.add(markerresestudiantes);
-        marcadores.add(markerucomplutense);
-        marcadores.add(markerupm);
-
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 12));
-        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
-            @Override
-            public void onInfoWindowClick(Marker marker) {
-                DetallesEvento.setInfo(marker.getTitle(), marker.getSnippet());
-                startActivity(new Intent(MapsActivity.this, DetallesEvento.class));
-            }
-        });
-    }
-*/
 }

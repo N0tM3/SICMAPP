@@ -1,8 +1,62 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sicma.sicmapp.Activitys.MapsActivity" />
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context="com.sicma.sicmapp.Activitys.MapsActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!--
+    <TextView
+        android:id="@+id/latlongLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/searchView1"
+        android:background="#ff058fff"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#ffffffff" />
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viridianGreen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchPlaces"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/white"
+            android:hint="Search Location"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/mSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/searchView1"
+            android:layout_alignBottom="@+id/searchView1"
+            android:layout_alignRight="@+id/searchView1"
+            android:background="@drawable/ic_play_arrow_black_24dp" />
+    </LinearLayout>
+</RelativeLayout>
