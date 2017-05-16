@@ -1,71 +1,28 @@
 package com.sicma.sicmapp.Objetos;
 
-import android.graphics.drawable.Drawable;
-
 /**
  * Created by Eduardo on 10/04/2017.
  */
 
 public class Evento {
 
-    private String titulo, direccion, descripcion, latitud_x, longitud_y, fecha, hora, web, precio;
-    private int img;
+    private String fecha, lugar, hora0, dec0, lugar0, hora1, dec1, lugar1, hora2, dec2, lugar2, web;
+    private int bg;
 
-    public Evento() {
-    }
-
-    public Evento(String titulo, String direccion, String descripcion, String latitud_x, String longitud_y, String fecha, String hora, String web, String precio, int img) {
-        this.titulo = titulo;
-        this.direccion = direccion;
-        this.descripcion = descripcion;
-        this.latitud_x = latitud_x;
-        this.longitud_y = longitud_y;
+    public Evento(String fecha, String lugar, String hora0, String dec0, String lugar0, String hora1, String dec1, String lugar1, String hora2, String dec2, String lugar2, String web, int bg) {
         this.fecha = fecha;
-        this.hora = hora;
+        this.lugar = lugar;
+        this.hora0 = hora0;
+        this.dec0 = dec0;
+        this.lugar0 = lugar0;
+        this.hora1 = hora1;
+        this.dec1 = dec1;
+        this.lugar1 = lugar1;
+        this.hora2 = hora2;
+        this.dec2 = dec2;
+        this.lugar2 = lugar2;
         this.web = web;
-        this.precio = precio;
-        this.img = img;
-    }
-
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getLatitud_x() {
-        return latitud_x;
-    }
-
-    public void setLatitud_x(String latitud_x) {
-        this.latitud_x = latitud_x;
-    }
-
-    public String getLongitud_y() {
-        return longitud_y;
-    }
-
-    public void setLongitud_y(String longitud_y) {
-        this.longitud_y = longitud_y;
+        this.bg = bg;
     }
 
     public String getFecha() {
@@ -76,12 +33,84 @@ public class Evento {
         this.fecha = fecha;
     }
 
-    public String getHora() {
-        return hora;
+    public String getLugar() {
+        return lugar;
     }
 
-    public void setHora(String hora) {
-        this.hora = hora;
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+
+    public String getHora0() {
+        return hora0;
+    }
+
+    public void setHora0(String hora0) {
+        this.hora0 = hora0;
+    }
+
+    public String getDec0() {
+        return dec0;
+    }
+
+    public void setDec0(String dec0) {
+        this.dec0 = dec0;
+    }
+
+    public String getLugar0() {
+        return lugar0;
+    }
+
+    public void setLugar0(String lugar0) {
+        this.lugar0 = lugar0;
+    }
+
+    public String getHora1() {
+        return hora1;
+    }
+
+    public void setHora1(String hora1) {
+        this.hora1 = hora1;
+    }
+
+    public String getDec1() {
+        return dec1;
+    }
+
+    public void setDec1(String dec1) {
+        this.dec1 = dec1;
+    }
+
+    public String getLugar1() {
+        return lugar1;
+    }
+
+    public void setLugar1(String lugar1) {
+        this.lugar1 = lugar1;
+    }
+
+    public String getHora2() {
+        return hora2;
+    }
+
+    public void setHora2(String hora2) {
+        this.hora2 = hora2;
+    }
+
+    public String getDec2() {
+        return dec2;
+    }
+
+    public void setDec2(String dec2) {
+        this.dec2 = dec2;
+    }
+
+    public String getLugar2() {
+        return lugar2;
+    }
+
+    public void setLugar2(String lugar2) {
+        this.lugar2 = lugar2;
     }
 
     public String getWeb() {
@@ -92,19 +121,11 @@ public class Evento {
         this.web = web;
     }
 
-    public String getPrecio() {
-        return precio;
+    public int getBg() {
+        return bg;
     }
 
-    public void setPrecio(String precio) {
-        this.precio = precio;
-    }
-
-    public int getImg() {
-        return img;
-    }
-
-    public void setImg(int img) {
-        this.img = img;
+    public void setBg(int bg) {
+        this.bg = bg;
     }
 }

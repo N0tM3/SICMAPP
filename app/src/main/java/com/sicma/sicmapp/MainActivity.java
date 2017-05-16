@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         rl_noticias = (RelativeLayout) findViewById(R.id.rl_noticias);
 
         img_web = (ImageView) findViewById(R.id.img_web);
-        img_twitter= (ImageView) findViewById(R.id.img_twitter);
         img_info = (ImageView) findViewById(R.id.img_info);
 
         //EVENTOS ONCLICK
@@ -67,12 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        img_twitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    Toast.makeText(MainActivity.this, "PRÓXIMAMENTE", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         img_web.setOnClickListener(new View.OnClickListener() {
             @Override
