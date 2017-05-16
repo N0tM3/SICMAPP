@@ -180,7 +180,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             if(!isFromMemoryCache) marker.showInfoWindow();
                             return false;
                         }
-                    }).fitCenter().override(300,200).into(ivImage);
+                    }).fitCenter().override(500,500).into(ivImage);
                     return v;
                 }
             });
