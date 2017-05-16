@@ -121,15 +121,15 @@ iconos</string>
     <string name="imgDespositoCanalPCastilla"></string>
 
     <string name="titAereoPlazaCallao">Aerogenerador(Iberdrola)</string>
-    <string name="despAereoPlazaCallao"></string>
+    <string name="despAereoPlazaCallao">Un aerogenerador es un generador eléctrico que funciona convirtiendo la energía cinética del viento en energía mecánica a través de una hélice y en energía eléctrica gracias a un alternador. Sus precedentes directos son los molinos de viento que se empleaban para la molienda y obtención de harina.</string>
     <string name="imgAereoPlazaCallao">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-O3_wN7LS3RLrkXMnTTWT59xaKjHYpaFsEQiR3CiEslM1CnL</string>
 
     <string name="titCompuertaCanalPan">Compuerta Canal Panamá(Sacyr)</string>
-    <string name="desCompuertaCanalPan"></string>
+    <string name="desCompuertaCanalPan">La plaza de Colón es uno de los lugares de mayor interés de la ciudad de Madrid, en España. Recibe el nombre de Cristóbal Colón, a quien hace honor. Se encuentra delimitada por las calles de Serrano, Goya, Jorge Juan, y los paseos de Recoletos y La Castellana, uniendo estos dos últimos con la calle de Génova. En su parte este hay un amplio espacio abierto conocido como Jardines del Descubrimiento.</string>
     <string name="imgCompuertaCanalPan">http://www.yometiroalmonte.es/wp-content/uploads/fotos/fp_251.JPG</string>
 
     <string name="titBoyaOleaje">Boya oleaje(Cedex)</string>
-    <string name="desBoyaOleaje"></string>
+    <string name="desBoyaOleaje">La Cuesta de Moyano es el nombre popular con el que se conoce a la calle de Claudio de Moyano de Madrid, famosa por las casetas de venta de libros (muchas de ellas de libreros de viejo, o de segunda mano) que están instaladas junto a la verja del Jardín Botánico. La calle comunica el Paseo del Prado con el parque del Retiro y actualmente está peatonalizada. Recibe su nombre del político zamorano Claudio Moyano, autor de la Ley de Instrucción Pública de 1855 y que tiene una estatua de bronce en el arranque de la subida. Al final de la cuesta hay otra estatua dedicada al escritor vasco Pío Baroja. Esta estatua broncínea anteriormente estaba situada en el interior del Parque del Retiro.</string>
     <string name="imgBoyaOleaje">http://cazatormentas.com/wp-content/uploads/2010/11/boya.jpg</string>
 
     <string name="titRozadora">Rozadora(ACS)</string>
@@ -180,7 +180,7 @@ Gavia y Estanque de Tormentas de Abroñigales</string>
     <string name="titAtocha">Nuevo Túnel de Alta Velocidad y Centro de
 Regulación y Control Atocha</string>
     <string name="desAtocha">Jueves 25 de mayo"\n"
-     10.00</string>
+    - 10.00 VISITA!!!</string>
     <string name="imgAtocha">https://www.railastur.es/wp-content/uploads/2015/03/CRC-Zaragoza.jpg</string>
 
     <string name="titAranjuez">Aranjuez, Embocador, Azuda, Canales, Huertas y
@@ -207,7 +207,7 @@ y Museo Eduardo Torroja</string>
 
     <string name="titEMT">Museo de autobuses históricos EMT</string>
     <string name="desEMT">Domingo 28 de mayo"\n"
-         11.00</string>
+        - 11.00 VISITA!!!</string>
     <string name="imgEMT">http://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2016/06/07/14653163523251.jpg</string>
     <string name="title_activity_place_details">PlaceDetails</string>
     <string name="large_text">
@@ -300,15 +300,31 @@ y Museo Eduardo Torroja</string>
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="titpiezacicloagua">Pieza del ciclo del agua en Plaza de Castilla</string>
-    <string name="d1">El Depósito de la Plaza de Castilla (denominado también segundo depósito elevado) es una instalación perteneciente al Canal de Isabel II (Madrid). Se encuentra ubicado desde 1952 al final del paseo de la Castellana en un anexo a la plaza de Castilla. Se encuentra ubicado en el terreno municipal del que fue el cuarto depósito de laPlaza de Castilla (construido en el año 1939), y con una capacidad de 180.000 m3. El segundo depósito elevado se construye en el año 1939 con una capacidad de 3.800 m3 y una altura sobre la cota del terreno de unos 40 m."\n""\n"
-    Puede realizar una actividad el día 27 de mayo a las 10:00 - Itinerario con “Andariegos Madrid” por la muestra de
-iconos.
+    <string name="d1">VIERNES 26. "\n"
+
+Primer turno: 9:30/11:30"\n"
+
+Segundo turno: 10:30/12:30"\n"
+
+Punto de encuentro: Junto al pie del Depósito Elevado de Plaza de Castilla"\n"
+
+Breve reseña histórica. Antecedentes.:"\n"
+
+El proyecto del Canal Alto redactado por el ingeniero D. Francisco Parella por R.O. el 22 de Marzo de 1922 ya proponía y estudiaba la construcción de un indispensable depósito terminal de dicho Canal Alto (el actual depósito 4º de Plaza de Castilla).
+
+El 21 de junio de 1923 el ingeniero D. Francisco Parella redactó el Proyecto de Bases para el concurso de adquisición de terreno destinado a la construcción del 4º depósito. El 9 de septiembre de 1922 el Ingeniero Director del Canal informó favorablemente a dicho Proyecto de Bases para proceder a la adquisición de los terrenos. A finales de noviembre de 1924 se le comunica al Ingeniero D. Francisco Parella que redacte el Proyecto del nuevo depósito con una capacidad de 180.000 metros cúbicos y cuatro compartimentos.
+
+El objetivo principal del nuevo depósito era atender por gravedad la demanda de la zona elevada atendia desde el 2º depósito con la elevadora ubicada en el edificio nº 3 de las Oficinas Centrales que llenaba el depósito elevado utilizado actualmente como Sala de Exposiciones y el desarrollo de Madrid capital en el entorno del 4º depósito mediante el depósito elevado de Plaza de Castilla inaugurado en 1952.
 </string>
-    <string name="d2"></string>
-    <string name="d3">La principal función de un compactador de residuos es reducir el volumen de los residuos mediante presión, proporcionando mayor densidad a los residuos (reducción de hasta 5 a 1). Esto se traduce en que un compactador puede cargar mucha más cantidad de residuo que un contenedor, ahorrando costes operativos y logísticos.</string>
-    <string name="d4"></string>
+    <string name="d2">El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno Paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81 044 espectadores.1 El estadio está catalogado por la UEFA con la máxima distinción, «estadio élite».</string>
+    <string name="d3">La plaza de Chamberí se encuentra ubicada en el distrito homónimo y en el barrio de Almagro, en la confluencia de la calle de Santa Engracia y del Paseo de Eduardo Dato, antiguamente calle del Cisne.
+
+Fue ajardinada en 1877. El 22 de abril de 1883 se inauguró, proyectado por Francisco de Cubas, el convento de las Siervas de María, cuya madre superiora era Soledad Torres Acosta y que antes de trasladarse a la plaza de Chamberí habían tenido múltiples domicilios en la zona. En octubre de 1919 se inauguró la estación de Chamberí del Metro de Madrid, situada bajo la plaza, que quedó en desuso en 1966 y que sería recuperada como museo en 2008. En 1985 la plaza experimentó una reforma concebida por Arturo Ordozgoiti que incluyó unas arquerías y unos muretes, derribados en 1994. En la plaza se encuentra también la sede de la Junta Municipal del distrito de Chamberí. "\n""\n"La principal función de un compactador de residuos es reducir el volumen de los residuos mediante presión, proporcionando mayor densidad a los residuos (reducción de hasta 5 a 1). Esto se traduce en que un compactador puede cargar mucha más cantidad de residuo que un contenedor, ahorrando costes operativos y logísticos.</string>
+    <string name="d4">La Puerta de Alcalá es una de las cinco antiguas puertas reales que daban acceso a la ciudad de Madrid (España).2
+
+Se encuentra situada en el centro de la rotonda de la Plaza de la Independencia. En el cruce de las calles de Alcalá, Alfonso XII, Serrano y Salustiano Olózaga, junto a las puertas del Retiro: Puerta de España, Puerta de la Independencia (entrada principal a los jardines del Retiro) y Puerta de Hernani.</string>
     <string name="d5"></string>
-    <string name="d6"></string>
+    <string name="d6">La plaza de Legazpi está ubicada en el distrito de Arganzuela de Madrid. Constituye el final del paseo de las Delicias y es el centro del barrio que lleva su nombre. En ella se encuentra la estación de metro homónima. Debe su nombre al conquistador Miguel López de Legazpi.</string>
     <string name="d7"></string>
     <string name="d8"></string>
     <string name="d9"></string>
@@ -318,21 +334,21 @@ iconos.
     <string name="titcabezatuneladora">Cabeza de tuneladora en Estadio Santiago Bernabeu</string>
     <string name="imgcabezatuneladora">http://i.imgur.com/1pWAKFF.png</string>
     <string name="titcompactadora">Compactadora de gestión de residuos en Plaza de Chamberí</string>
-    <string name="imgcompactadora">http://i.imgur.com/QYQSSa6.png</string>
+    <string name="imgcompactadora">http://i.imgur.com/W6C23R4.png</string>
     <string name="titcompuertacanal">Compuerta del Canal de Panamá en Plaza Colón</string>
     <string name="imgcompuerta">http://img.informador.com.mx/biblioteca/imagen/370x277/1067/1066184.jpg</string>
     <string name="titaerogenerador">Aerogenerador en Plaza Callao</string>
-    <string name="imgaerogenerador">http://i.imgur.com/a/RZaTv.png</string>
+    <string name="imgaerogenerador">http://i.imgur.com/gada7dt.png</string>
     <string name="tittopopuertaalcala">Topo en Puerta de Alcalá</string>
-    <string name="imgtopo">http://i.imgur.com/zsDM5Xt.png</string>
+    <string name="imgtopo">http://i.imgur.com/OGJgeGm.png</string>
     <string name="titboya">Boya medidora de oleaje con acelerómetro en Pº Prado con Cuesta Moyano</string>
-    <string name="imgboya">http://i.imgur.com/6ceyAyT.png</string>
+    <string name="imgboya">http://i.imgur.com/j9PFmFT.png</string>
     <string name="tittramovias">Tramo de vías con traviesas y ferrocamión en Museo Reina Sofia</string>
-    <string name="imgtramo">http://i.imgur.com/z5PSGt2.png</string>
+    <string name="imgtramo">http://i.imgur.com/rAbNP11.png</string>
     <string name="titrozadora">Rozadora cargadora Atocha</string>
-    <string name="imgrozadora">http://i.imgur.com/hGht5WM.png</string>
+    <string name="imgrozadora">http://i.imgur.com/0mbdrTG.png</string>
     <string name="titcubipodo">Cubípodo en Plaza de Legazpi</string>
-    <string name="imgcubipodo">http://i.imgur.com/D9NiDUv.png</string>
+    <string name="imgcubipodo">http://i.imgur.com/4jP3Voe.png</string>
 
 </resources>
 

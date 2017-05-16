@@ -131,7 +131,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mplaces.add(new Place(new LatLng(40.4530541,-3.688344499999971),BitmapDescriptorFactory.fromResource(R.mipmap.dos),getResources().getString(R.string.titcabezatuneladora),getResources().getString(R.string.d2),getResources().getString(R.string.imgcabezatuneladora)));
         mplaces.add(new Place(new LatLng(40.4324205,-3.6972862999999734),BitmapDescriptorFactory.fromResource(R.mipmap.tres),getResources().getString(R.string.titcompactadora),getResources().getString(R.string.d3),getResources().getString(R.string.imgcompactadora)));
         mplaces.add(new Place(new LatLng(40.4248641,-3.6891348000000335),BitmapDescriptorFactory.fromResource(R.mipmap.cuatro),getResources().getString(R.string.titcompuertacanal),getResources().getString(R.string.desCompuertaCanalPan),getResources().getString(R.string.imgCompuertaCanalPan)));
-        mplaces.add(new Place(new LatLng(40.4201134,-3.705888800000025),BitmapDescriptorFactory.fromResource(R.mipmap.cinco),getResources().getString(R.string.titaerogenerador),getResources().getString(R.string.despAereoPlazaCallao),getResources().getString(R.string.imgAereoPlazaCallao)));
+        mplaces.add(new Place(new LatLng(40.4201134,-3.705888800000025),BitmapDescriptorFactory.fromResource(R.mipmap.cinco),getResources().getString(R.string.titaerogenerador),getResources().getString(R.string.despAereoPlazaCallao),getResources().getString(R.string.imgaerogenerador)));
         mplaces.add(new Place(new LatLng(40.419992,-3.6887369999999464),BitmapDescriptorFactory.fromResource(R.mipmap.seis),getResources().getString(R.string.tittopopuertaalcala),getResources().getString(R.string.d4),getResources().getString(R.string.imgtopo)));
         mplaces.add(new Place(new LatLng(40.4096964,-3.6903641999999763),BitmapDescriptorFactory.fromResource(R.mipmap.siete),getResources().getString(R.string.titboya),getResources().getString(R.string.desBoyaOleaje),getResources().getString(R.string.imgBoyaOleaje)));
         mplaces.add(new Place(new LatLng(40.4079123,-3.6945568999999523),BitmapDescriptorFactory.fromResource(R.mipmap.ocho),getResources().getString(R.string.tittramovias),getResources().getString(R.string.desEMT),getResources().getString(R.string.imgtramo)));
@@ -200,6 +200,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
             mMap.addMarker(marker);
         }
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 9));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MADRID.getCenter(), 12));
     }
 }
