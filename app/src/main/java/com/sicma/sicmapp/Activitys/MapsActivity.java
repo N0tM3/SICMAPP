@@ -60,6 +60,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //View Auto Complete EditText
         final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.searchPlaces);
         autoCompleteTextView.setAdapter(makeArrayAdapterFromPlaces(getPlaces()));
+        autoCompleteTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                autoCompleteTextView.setText("");
+            }
+        });
 
         //Button
         ImageView mSearchButton = (ImageView) findViewById(R.id.mSearchButton);
