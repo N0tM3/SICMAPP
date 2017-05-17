@@ -270,15 +270,6 @@
                           app:srcCompat="@drawable/information" />
 
                       <ImageView
-                          android:id="@+id/img_twitter"
-                          android:layout_width="108dp"
-                          android:layout_height="50dp"
-                          android:layout_gravity="center"
-                          android:tint="@color/colorWhite"
-                          android:layout_weight="1"
-                          app:srcCompat="@drawable/twitter" />
-
-                      <ImageView
                           android:id="@+id/img_web"
                           android:layout_width="100dp"
                           android:layout_height="50dp"

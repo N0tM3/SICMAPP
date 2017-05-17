@@ -25,6 +25,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     private LayoutInflater layoutInflater;
     private RecyclerView recycler;
     private RecyclerView.LayoutManager lManager;
+
     private ArrayList<Evento> pag0 = new ArrayList<Evento>();
     private ArrayList<Evento> pag1 = new ArrayList<Evento>();
     private ArrayList<Evento> pag2 = new ArrayList<Evento>();
@@ -53,10 +54,22 @@ public class ViewPagerAdapter extends PagerAdapter {
                 recycler.setLayoutManager(lManager);
                 RecEventos adp = new RecEventos(context,pag0);
                 recycler.setAdapter(adp);
+                break;
             case 1:
+                recycler = (RecyclerView) view.findViewById(R.id.rc_events_1);
+                lManager = new LinearLayoutManager(context);
+                recycler.setLayoutManager(lManager);
+                RecEventos adp1= new RecEventos(context,pag1);
+                recycler.setAdapter(adp1);
+                break;
 
             case 2:
-
+                recycler = (RecyclerView) view.findViewById(R.id.rc_events_2);
+                lManager = new LinearLayoutManager(context);
+                recycler.setLayoutManager(lManager);
+                RecEventos adp2= new RecEventos(context,pag2);
+                recycler.setAdapter(adp2);
+                break;
 
         }
 
