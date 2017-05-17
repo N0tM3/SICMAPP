@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/SICMAPPDef.iml" filepath="$PROJECT_DIR$/SICMAPPDef.iml" />
       <module fileurl="file://$PROJECT_DIR$/SICMAPPFINALBETA.iml" filepath="$PROJECT_DIR$/SICMAPPFINALBETA.iml" />
       <module fileurl="file://$PROJECT_DIR$/SICMAPPFinal.iml" filepath="$PROJECT_DIR$/SICMAPPFinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SICMAPPFiniquitada.iml" filepath="$PROJECT_DIR$/SICMAPPFiniquitada.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

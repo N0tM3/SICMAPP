@@ -11,12 +11,14 @@
         android:id="@+id/rl_cv_events"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/callao_madrid">
+        android:background="@drawable/callao_madrid"
+        android:scaleType="centerCrop"  >
 
         <ImageView
             android:id="@+id/img_card_events"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
             android:alpha="0.50"
             card_view:srcCompat="@android:color/background_dark" />
 
