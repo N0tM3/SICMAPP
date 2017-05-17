@@ -32,7 +32,7 @@
             android:layout_marginRight="25dp"
             android:background="@android:color/white"
             android:hint="@string/auto_edit_text"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/greenery" />
 
         <ImageView
             android:id="@+id/mSearchButton"
@@ -41,6 +41,7 @@
             android:layout_alignBaseline="@+id/searchView1"
             android:layout_alignBottom="@+id/searchView1"
             android:layout_alignRight="@+id/searchView1"
-            android:background="@drawable/ic_play_arrow_black_24dp" />
+            android:background="@drawable/press_circular_for_arrow"
+            android:src="@drawable/ic_play_arrow_24dp" />
     </LinearLayout>
 </RelativeLayout>
