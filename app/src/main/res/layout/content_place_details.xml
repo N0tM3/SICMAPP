@@ -9,11 +9,26 @@ tools:context="com.sicma.sicmapp.Activitys.PlaceDetails"
 tools:showIn="@layout/activity_place_details"
 android:background="@color/viridianGreen">
 
-<TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
     android:id="@+id/mText"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/text_margin"
     android:textColor="@color/colorWhite" />
 
+<!--
+        <ImageView
+            android:id="@+id/mShareImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="@dimen/text_margin"
+            android:src="@drawable/ic_share_24dp" />
+            -->
+        </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

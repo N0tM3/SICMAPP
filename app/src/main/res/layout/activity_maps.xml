@@ -42,6 +42,6 @@
             android:layout_alignBottom="@+id/searchView1"
             android:layout_alignRight="@+id/searchView1"
             android:background="@drawable/press_circular_for_arrow"
-            android:src="@drawable/ic_play_arrow_24dp" />
+            android:src="@drawable/ic_search_24dp" />
     </LinearLayout>
 </RelativeLayout>
