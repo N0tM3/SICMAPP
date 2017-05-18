@@ -36,22 +36,24 @@
         android:id="@+id/colaboraciontexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp"
-        android:text="TextView"
-        android:textColor="@color/colorWhite"
-        android:textSize="20sp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/tituloinfo"
-        android:layout_toEndOf="@+id/tituloinfo" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/colaboracion"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imglogouem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/colaboraciontexto"
-        android:layout_alignStart="@+id/colaboraciontexto"
-        android:layout_alignTop="@+id/colaboraciontexto"
-        android:layout_marginTop="48dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/logoueminfo" />
 </RelativeLayout>

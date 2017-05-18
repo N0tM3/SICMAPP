@@ -11,7 +11,7 @@
     <string name="desinfo"> - Daniel Morgado Jara "\n"
     - José Manuel Rodríguez Sánchez "\n"
     - Eduardo Nevado Fraile</string>
-    <string name="colaboracion">En colaboración con la universidad Europea.</string>
+    <string name="colaboracion">En colaboración con:</string>
 
     <!--Searching mas-->
     <string name="auto_edit_text">Buscar...</string>

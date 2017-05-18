@@ -13,7 +13,6 @@ import com.sicma.sicmapp.R;
 
 public class InfoActivity extends AppCompatActivity {
     private TextView tit, des, cola;
-    private ImageView uem;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,11 +25,9 @@ public class InfoActivity extends AppCompatActivity {
         tit = (TextView) findViewById(R.id.tituloinfo);
         des = (TextView) findViewById(R.id.descipinfo);
         cola = (TextView) findViewById(R.id.colaboraciontexto);
-        uem= (ImageView) findViewById(R.id.imglogouem);
         tit.setText(getResources().getString(R.string.titinfo));
         des.setText(getResources().getString(R.string.desinfo));
         cola.setText(getResources().getString(R.string.colaboracion));
-        uem.setImageResource(R.drawable.logoueminfo);
     }
 }
 
