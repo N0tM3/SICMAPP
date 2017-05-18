@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tituloinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/descipinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tituloinfo"
+        android:layout_alignStart="@+id/tituloinfo"
+        android:layout_below="@+id/tituloinfo"
+        android:layout_marginTop="22dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/colaboraciontexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tituloinfo"
+        android:layout_toEndOf="@+id/tituloinfo" />
+
+    <ImageView
+        android:id="@+id/imglogouem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/colaboraciontexto"
+        android:layout_alignStart="@+id/colaboraciontexto"
+        android:layout_alignTop="@+id/colaboraciontexto"
+        android:layout_marginTop="48dp" />
+</RelativeLayout>

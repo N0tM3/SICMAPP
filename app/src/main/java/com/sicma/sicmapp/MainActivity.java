@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.sicma.sicmapp.Activitys.ActivityEvents;
+import com.sicma.sicmapp.Activitys.InfoActivity;
 import com.sicma.sicmapp.Activitys.MapsActivity;
 import com.sicma.sicmapp.Activitys.RecyclerViewNewsActivity;
 import com.sicma.sicmapp.Transfroms_Adapters.AccessToNet;
@@ -62,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
         img_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Toast.makeText(MainActivity.this, "PRÓXIMAMENTE", Toast.LENGTH_SHORT).show();
+                Intent chageinfo = new Intent(MainActivity.this, InfoActivity.class);
+                startActivity(chageinfo);
             }
         });
 

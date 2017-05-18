@@ -27,6 +27,7 @@
         <activity android:name=".Activitys.ActivityEvents" />
         <activity android:name=".Activitys.RecyclerViewNewsActivity" />
         <activity android:name=".Activitys.MapsActivity" />
+        <activity android:name=".Activitys.InfoActivity" />
         <activity android:name=".Activitys.ActivityEventsDetails" android:theme="@style/Theme.AppCompat.Translucent"></activity>
         <activity
             android:name=".Activitys.PlaceDetails"
