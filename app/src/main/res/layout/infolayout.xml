@@ -3,57 +3,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tituloinfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="20dp"
-        android:focusable="false"
-        android:text="TextView"
-        android:textColor="@color/colorWhite"
-        android:textColorLink="@color/colorWhite"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/descipinfo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tituloinfo"
-        android:layout_alignStart="@+id/tituloinfo"
-        android:layout_below="@+id/tituloinfo"
-        android:layout_marginTop="22dp"
-        android:text="TextView"
-        android:textColor="@color/colorWhite"
-        android:textSize="14sp" />
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_alignLeft="@+id/imglogoSICMA"
+        android:layout_alignStart="@+id/imglogoSICMA">
+
+        <TextView
+            android:id="@+id/tituloinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="TextView"
+            android:textColor="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descipinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tituloinfo"
+            android:layout_alignStart="@+id/tituloinfo"
+            android:layout_below="@+id/tituloinfo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/colaboraciontexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="110dp"
+        android:layout_above="@+id/imglogoSICMA"
+        android:layout_marginBottom="2dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
         android:text="@string/colaboracion"
         android:textColor="@color/colorWhite"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imglogouem"
+        android:id="@+id/imglogoSICMA"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="325dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        app:srcCompat="@drawable/logoueminfo" />
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sicma_logo" />
+
+
 </RelativeLayout>

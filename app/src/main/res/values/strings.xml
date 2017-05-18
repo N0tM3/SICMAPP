@@ -8,10 +8,10 @@
     <string name="title_activity_event">EventActivity</string>
     <string name="action_settings">Settings</string>
     <string name="titinfo">La aplicación ha sido desarrollada por los alumnos de 2º DAM:</string>
-    <string name="desinfo"> - Daniel Morgado Jara "\n"
+    <string name="desinfo">- Daniel Morgado Jara "\n"
     - José Manuel Rodríguez Sánchez "\n"
     - Eduardo Nevado Fraile</string>
-    <string name="colaboracion">En colaboración con:</string>
+    <string name="colaboracion">Mas información en:</string>
 
     <!--Searching mas-->
     <string name="auto_edit_text">Buscar...</string>
