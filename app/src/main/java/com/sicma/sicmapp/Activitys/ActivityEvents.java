@@ -110,7 +110,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
         Evento pg2_ev9 = new Evento("CONCURSO FOTOGRÁFICO","","","Consultar bases en www.caminosmadrid.es","","","","","","","","", R.drawable.concurso_foto);
         Evento pg2_ev10 = new Evento("CONCURSO CORTOMETRAJES","","","Consultar bases en www.caminosmadrid.es","","","","","","","","", R.drawable.concurso_cortos);
-        Evento pg2_ev11 = new Evento("CONCURSO ICONOS","","","Consultar bases en www.caminosmadrid.es","","","","","","","","", R.drawable.iconos);
+        Evento pg2_ev11 = new Evento("CONCURSO DE REDES SOCIALES","","","Consultar bases en www.caminosmadrid.es","","","","","","","","", R.drawable.iconos);
 
 
         pag2.add(pg2_ev0);

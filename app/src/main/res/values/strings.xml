@@ -11,7 +11,7 @@
     <string name="desinfo">- Daniel Morgado Jara "\n"
     - José Manuel Rodríguez Sánchez "\n"
     - Eduardo Nevado Fraile</string>
-    <string name="colaboracion">Mas información en:</string>
+    <string name="colaboracion">Mas información en (Pulsa para descargar PDF):</string>
 
     <!--Searching mas-->
     <string name="auto_edit_text">Buscar...</string>
@@ -341,7 +341,7 @@ Se encuentra situada en el centro de la rotonda de la Plaza de la Independencia.
     <string name="imgpieza">http://www.iagua.es/sites/default/files/styles/thumbnail-830x455/public/deposito_de_agua_del_canal_de_isabel_ii_en_la_plaza_de_castilla.jpg?itok=1YZRN-wY</string>
     <string name="titcabezatuneladora">Cabeza de tuneladora en Estadio Santiago Bernabeu</string>
     <string name="imgcabezatuneladora">http://i.imgur.com/1pWAKFF.png</string>
-    <string name="titcompactadora">Compactadora de gestión de residuos en Plaza de Chamberí</string>
+    <string name="titcompactadora">Compactadora de gestión de residuos en Ruben Darío</string>
     <string name="imgcompactadora">http://i.imgur.com/W6C23R4.png</string>
     <string name="titcompuertacanal">Compuerta del Canal de Panamá en Plaza Colón</string>
     <string name="imgcompuerta">http://img.informador.com.mx/biblioteca/imagen/370x277/1067/1066184.jpg</string>
